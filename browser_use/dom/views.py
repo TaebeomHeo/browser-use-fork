@@ -78,6 +78,34 @@ class DOMElementNode(DOMBaseNode):
 
 		return HistoryTreeProcessor._hash_dom_element(self)
 
+	def get_text_content(self) -> str:
+		"""
+		요소의 모든 텍스트 콘텐츠를 반환합니다.
+		
+		Returns:
+			요소와 모든 하위 요소의 텍스트 콘텐츠를 결합한 문자열
+		"""
+		text_parts = []
+		
+		def collect_text(node: DOMBaseNode) -> None:
+			if isinstance(node, DOMTextNode):
+				text_parts.append(node.text)
+			elif isinstance(node, DOMElementNode):
+				for child in node.children:
+					collect_text(child)
+		
+		collect_text(self)
+		return ''.join(text_parts).strip()
+	
+	def get_all_text(self) -> str:
+		"""
+		요소의 모든 텍스트 콘텐츠를 반환합니다. get_text_content와 동일한 기능을 제공합니다.
+		
+		Returns:
+			요소와 모든 하위 요소의 텍스트 콘텐츠를 결합한 문자열
+		"""
+		return self.get_text_content()
+
 	def get_all_text_till_next_clickable_element(self, max_depth: int = -1) -> str:
 		text_parts = []
 

@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 from typing import Optional, Type
+from datetime import datetime
 
 from main_content_extractor import MainContentExtractor
 from pydantic import BaseModel
@@ -23,6 +24,7 @@ from browser_use.controller.views import (
 	SwitchTabAction,
 )
 from browser_use.utils import time_execution_async, time_execution_sync
+from browser_use.playwright_logger import PlaywrightLogger
 
 logger = logging.getLogger(__name__)
 
@@ -32,11 +34,13 @@ class Controller:
 		self,
 		exclude_actions: list[str] = [],
 		output_model: Optional[Type[BaseModel]] = None,
+		log_dir: Optional[str] = None,
 	):
 		self.exclude_actions = exclude_actions
 		self.output_model = output_model
 		self.registry = Registry(exclude_actions)
 		self._register_default_actions()
+		self.logger = PlaywrightLogger(log_dir=log_dir)
 
 	def _register_default_actions(self):
 		"""Register all default browser actions"""
@@ -445,6 +449,9 @@ class Controller:
 		"""Execute multiple actions"""
 		results = []
 
+		# PlaywrightLogger에 브라우저 컨텍스트 설정
+		self.logger.browser_context = browser_context
+
 		session = await browser_context.get_session()
 		cached_selector_map = session.cached_state.selector_map
 		cached_path_hashes = set(e.hash.branch_path_hash for e in cached_selector_map.values())
@@ -474,18 +481,326 @@ class Controller:
 	async def act(self, action: ActionModel, browser_context: BrowserContext) -> ActionResult:
 		"""Execute an action"""
 		try:
-			for action_name, params in action.model_dump(exclude_unset=True).items():
-				if params is not None:
-					# remove highlights
-					result = await self.registry.execute_action(action_name, params, browser=browser_context)
-					if isinstance(result, str):
-						return ActionResult(extracted_content=result)
-					elif isinstance(result, ActionResult):
-						return result
-					elif result is None:
-						return ActionResult()
-					else:
-						raise ValueError(f'Invalid action result type: {type(result)} of {result}')
-			return ActionResult()
+			# 디버깅 정보 출력
+			print("\n=== 디버깅: Controller.act 메서드 호출 ===")
+			print(f"액션: {action}")
+			print(f"액션 타입: {type(action)}")
+			
+			# 액션 정보 추출
+			element_index = None
+			text = None
+			url = None
+			xpath = None
+			action_name = "unknown"  # 기본값 설정
+			params = {}  # 기본값 설정
+			
+			# 액션 파라미터에서 필요한 정보 추출
+			try:
+				# 액션 타입과 파라미터 추출
+				action_dict = action.model_dump(exclude_unset=True)
+				for name, parameters in action_dict.items():
+					if parameters is not None:
+						action_name = name
+						params = parameters
+						break
+				
+				# 액션 타입에 따라 element_index 추출
+				if action_name == 'click_element' and isinstance(params, dict) and 'index' in params:
+					element_index = params['index']
+					print(f"디버깅: element_index = {element_index} (click_element)")
+				elif action_name == 'input_text' and isinstance(params, dict) and 'index' in params:
+					element_index = params['index']
+					print(f"디버깅: element_index = {element_index} (input_text)")
+				else:
+					print(f"디버깅: element_index = None (액션: {action_name})")
+				
+				# 기타 파라미터 추출
+				if isinstance(params, dict):
+					if 'text' in params:
+						text = params['text']
+					if 'url' in params:
+						url = params['url']
+					if 'xpath' in params:
+						xpath = params['xpath']
+			except Exception as e:
+				print(f"디버깅: 액션 파라미터 추출 중 오류 발생: {str(e)}")
+			print("=== 디버깅 정보 끝 ===\n")
+			
+			# PlaywrightLogger에 브라우저 컨텍스트 설정 (만약 설정되지 않았다면)
+			if self.logger.browser_context is None:
+				self.logger.browser_context = browser_context
+
+			# 현재 페이지 URL 및 타이틀 가져오기
+			current_url = None
+			page_title = None
+			try:
+				page = await browser_context.get_current_page()
+				current_url = page.url
+				page_title = await page.title()
+			except Exception as e:
+				logger.debug(f"Failed to get page info: {str(e)}")
+			
+			# 요소 상세 정보 수집 (Playwright ElementHandle 사용)
+			element_details = {}
+			if element_index is not None:
+				try:
+					# 브라우저 컨텍스트를 통해 요소 핸들 가져오기
+					element_handle = await browser_context.get_element_by_index(element_index)
+					print(f"디버깅: element_handle = {element_handle}")
+					
+					if element_handle:
+						# 요소의 상세 정보 수집
+						element_details = {
+							"index": element_index,
+							"tag_name": await element_handle.evaluate("el => el.tagName.toLowerCase()"),
+							"text_content": await element_handle.text_content(),
+							"inner_text": await element_handle.evaluate("el => el.innerText || ''"),
+							"is_visible": await element_handle.is_visible(),
+							"is_enabled": await element_handle.is_enabled(),
+							"attributes": {}
+						}
+						
+						print(f"디버깅: element_details = {element_details}")
+						
+						# 중요 속성 수집
+						for attr in ['id', 'class', 'name', 'type', 'value', 'href', 'src', 'placeholder', 'aria-label', 'role', 'title', 'alt', 'data-testid']:
+							value = await element_handle.get_attribute(attr)
+							if value:
+								element_details["attributes"][attr] = value
+								print(f"디버깅: 속성 {attr} = {value}")
+						
+						# 요소의 위치와 크기 정보 수집
+						bbox = await element_handle.bounding_box()
+						if bbox:
+							element_details["position"] = {'x': bbox['x'], 'y': bbox['y']}
+							element_details["size"] = {'width': bbox['width'], 'height': bbox['height']}
+						
+						# XPath 생성
+						element_details["xpath"] = await element_handle.evaluate("""el => {
+							const getXPath = function(element) {
+								if (element.id !== '') return '//*[@id="' + element.id + '"]';
+								if (element === document.body) return '/html/body';
+								
+								let ix = 0;
+								const siblings = element.parentNode.childNodes;
+								
+								for (let i = 0; i < siblings.length; i++) {
+									const sibling = siblings[i];
+									if (sibling === element) return getXPath(element.parentNode) + '/' + element.tagName.toLowerCase() + '[' + (ix + 1) + ']';
+									if (sibling.nodeType === 1 && sibling.tagName === element.tagName) ix++;
+								}
+							};
+							return getXPath(el);
+						}""")
+						
+						# CSS 선택자 생성
+						element_details["css_selector"] = await element_handle.evaluate("""el => {
+							const getCssSelector = function(el) {
+								if (el.id) return '#' + el.id;
+								if (el.classList && el.classList.length > 0) return el.tagName.toLowerCase() + '.' + Array.from(el.classList).join('.');
+								
+								// 기본 선택자
+								let selector = el.tagName.toLowerCase();
+								
+								// 속성 추가
+								if (el.id) selector += '#' + el.id;
+								if (el.name) selector += '[name="' + el.name + '"]';
+								
+								return selector;
+							};
+							return getCssSelector(el);
+						}""")
+						
+						print(f"디버깅: xpath = {element_details['xpath']}")
+						print(f"디버깅: css_selector = {element_details['css_selector']}")
+						
+						# 부모 요소 정보 수집
+						try:
+							parent_info = await element_handle.evaluate("""el => {
+								const parent = el.parentElement;
+								if (!parent) return null;
+								
+								return {
+									tag_name: parent.tagName.toLowerCase(),
+									id: parent.id || null,
+									class_name: parent.className || null,
+									has_parent: !!parent.parentElement
+								};
+							}""")
+							
+							if parent_info:
+								element_details["parent_info"] = parent_info
+								print(f"디버깅: parent_info = {parent_info}")
+						except Exception as e:
+							logger.debug(f"Failed to get parent info: {str(e)}")
+						
+						# 자식 요소 정보 수집
+						try:
+							children_info = await element_handle.evaluate("""el => {
+								const children = Array.from(el.children);
+								return {
+									count: children.length,
+									tags: children.map(child => child.tagName.toLowerCase())
+								};
+							}""")
+							
+							if children_info:
+								element_details["children_info"] = children_info
+								print(f"디버깅: children_info = {children_info}")
+						except Exception as e:
+							logger.debug(f"Failed to get children info: {str(e)}")
+						
+						logger.debug(f"Collected detailed element info for index {element_index}")
+				except Exception as e:
+					logger.debug(f"Failed to collect element details: {str(e)}")
+					print(f"디버깅 예외: {str(e)}")
+			
+			# 액션 실행 전 로깅 (상세 정보 포함)
+			print(f"디버깅: log_action_before_execute 호출 전 - element_index={element_index}, selector={element_details.get('css_selector') if element_details else None}")
+			pre_action_element_info = await self.logger.log_action_before_execute(
+				action_type=action_name,
+				element_index=element_index,
+				selector=element_details.get("css_selector") if element_details else None,
+				xpath=element_details.get("xpath") if element_details else xpath,
+				text=text,
+				url=url
+			)
+			print(f"디버깅: log_action_before_execute 호출 후 - pre_action_element_info={pre_action_element_info}")
+			
+			# 요소 상세 정보가 있으면 로그 파일에 추가 기록
+			if element_details:
+				with open(self.logger.element_details_log_file, 'a', encoding='utf-8') as f:
+					f.write(f"=== PRE-ACTION ELEMENT DETAILS: {action_name} - {datetime.now().isoformat()} ===\n")
+					f.write(f"Element Index: {element_index}\n")
+					f.write(f"Tag: {element_details.get('tag_name', 'unknown')}\n")
+					f.write(f"Text Content: {element_details.get('text_content', '')[:200]}\n")
+					f.write(f"Is Visible: {element_details.get('is_visible', False)}\n")
+					f.write(f"Is Enabled: {element_details.get('is_enabled', False)}\n")
+					
+					if "attributes" in element_details:
+						f.write("Attributes:\n")
+						for key, value in element_details["attributes"].items():
+							f.write(f"  {key}: {value}\n")
+					
+					if "position" in element_details:
+						f.write(f"Position: x={element_details['position']['x']}, y={element_details['position']['y']}\n")
+					
+					if "size" in element_details:
+						f.write(f"Size: width={element_details['size']['width']}, height={element_details['size']['height']}\n")
+					
+					if "xpath" in element_details:
+						f.write(f"XPath: {element_details['xpath']}\n")
+					
+					if "css_selector" in element_details:
+						f.write(f"CSS Selector: {element_details['css_selector']}\n")
+					
+					if "parent_info" in element_details:
+						f.write("Parent Element:\n")
+						for key, value in element_details["parent_info"].items():
+							f.write(f"  {key}: {value}\n")
+					
+					if "children_info" in element_details:
+						f.write(f"Children Count: {element_details['children_info']['count']}\n")
+						f.write(f"Children Tags: {', '.join(element_details['children_info']['tags'])}\n")
+					
+					f.write("-" * 80 + "\n\n")
+			
+			# 액션 실행 시작 시간 기록
+			start_time = datetime.now()
+			
+			# 액션 실행
+			result = None
+			error = None
+			action_result = None
+			
+			try:
+				# 하이라이트 제거
+				await browser_context.remove_highlights()
+				
+				# 액션 실행
+				result = await self.registry.execute_action(action_name, params, browser=browser_context)
+				
+				# 결과 처리
+				if isinstance(result, str):
+					action_result = ActionResult(extracted_content=result)
+				elif isinstance(result, ActionResult):
+					action_result = result
+				elif result is None:
+					action_result = ActionResult()
+				else:
+					raise ValueError(f'Invalid action result type: {type(result)} of {result}')
+				
+				# 결과 문자열 추출
+				result_str = action_result.extracted_content if action_result.extracted_content else "Success"
+				
+			except Exception as e:
+				error = str(e)
+				logger.error(f"Error executing action {action_name}: {error}")
+				raise e
+			
+			finally:
+				# 액션 실행 종료 시간 및 소요 시간 계산
+				end_time = datetime.now()
+				duration_ms = (end_time - start_time).total_seconds() * 1000
+				
+				# 페이지 변경 여부 확인
+				page_changed = False
+				new_url = None
+				new_title = None
+				try:
+					page = await browser_context.get_current_page()
+					new_url = page.url
+					new_title = await page.title()
+					page_changed = (current_url != new_url) or (page_title != new_title)
+				except Exception as e:
+					logger.debug(f"Failed to check page change: {str(e)}")
+				
+				# 액션 실행 후 요소 상태 확인 (가능한 경우)
+				post_action_element_details = {}
+				if element_index is not None and not page_changed:
+					try:
+						element_handle = await browser_context.get_element_by_index(element_index)
+						if element_handle:
+							# 요소의 상태 변화 확인
+							post_action_element_details = {
+								"is_visible": await element_handle.is_visible(),
+								"is_enabled": await element_handle.is_enabled(),
+								"text_content": await element_handle.text_content(),
+								"attributes": {}
+							}
+							
+							# 중요 속성 수집
+							for attr in ['value', 'class', 'style']:
+								value = await element_handle.get_attribute(attr)
+								if value:
+									post_action_element_details["attributes"][attr] = value
+					except Exception as e:
+						logger.debug(f"Failed to collect post-action element details: {str(e)}")
+				
+				# 액션 실행 후 로깅 (성공 또는 실패 여부와 관계없이)
+				await self.logger.log_action_after_execute(
+					action_type=action_name,
+					pre_action_element_info=pre_action_element_info,
+					element_index=element_index,
+					selector=element_details.get("css_selector") if element_details else None,
+					xpath=element_details.get("xpath") if element_details else xpath,
+					text=text,
+					url=url,
+					result=result_str if 'result_str' in locals() else None,
+					error=error,
+					additional_data={
+						"action_params": str(params),
+						"duration_ms": duration_ms,
+						"page_changed": page_changed,
+						"previous_url": current_url,
+						"previous_title": page_title,
+						"new_url": new_url,
+						"new_title": new_title,
+						"element_details": element_details,
+						"post_action_element_details": post_action_element_details
+					}
+				)
+			
+			return action_result
 		except Exception as e:
 			raise e

@@ -7,5 +7,11 @@
       "source.fixAll.ruff": "explicit",
       "source.organizeImports.ruff": "explicit"
     }
+  },
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker High Contrast]": {},
+    "activityBar.background": "#352D19",
+    "titleBar.activeBackground": "#4A3F22",
+    "titleBar.activeForeground": "#FBF9F6"
   }
 }

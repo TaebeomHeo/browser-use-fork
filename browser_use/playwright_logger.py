@@ -37,42 +37,26 @@ class PlaywrightLogger:
         self.session_dir = self.log_dir  # session_dir을 log_dir과 동일하게 설정
         os.makedirs(self.session_dir, exist_ok=True)
         
-        # 로그 파일 경로
-        self.log_file = os.path.join(self.session_dir, "playwright_actions.log")
-        self.json_log_file = os.path.join(self.session_dir, "playwright_actions.json")
-        self.detailed_log_file = os.path.join(self.session_dir, "detailed_actions.log")
-        self.element_details_log_file = os.path.join(self.session_dir, "element_details.log")
+        # 로그 파일 경로 - 통합 로그 파일 사용
+        self.log_file = os.path.join(self.session_dir, "automation_log.log")
+        self.json_log_file = os.path.join(self.session_dir, "automation_log.json")
         
         # 기존 로그 파일 삭제 (덮어쓰기 모드)
         if os.path.exists(self.log_file):
             os.remove(self.log_file)
         if os.path.exists(self.json_log_file):
             os.remove(self.json_log_file)
-        if os.path.exists(self.detailed_log_file):
-            os.remove(self.detailed_log_file)
-        if os.path.exists(self.element_details_log_file):
-            os.remove(self.element_details_log_file)
+        
+        # 로그 시작 메시지 기록
+        with open(self.log_file, 'w', encoding='utf-8') as f:
+            f.write(f"=== Playwright Automation Log - Started at {datetime.now().isoformat()} ===\n")
+            f.write(f"로그 디렉토리: {self.session_dir}\n\n")
+        
+        # 로거 설정
+        logger.info(f"PlaywrightLogger initialized. Logs will be saved to {self.log_dir}")
         
         # 액션 로그 초기화
         self.actions = []
-        
-        # 로그 파일 헤더 작성
-        with open(self.log_file, 'w', encoding='utf-8') as f:
-            f.write(f"Playwright Automation Log - Session: {self.session_id}\n")
-            f.write(f"Started at: {datetime.now().isoformat()}\n")
-            f.write("-" * 80 + "\n\n")
-        
-        with open(self.detailed_log_file, 'w', encoding='utf-8') as f:
-            f.write(f"Detailed Playwright Automation Log - Session: {self.session_id}\n")
-            f.write(f"Started at: {datetime.now().isoformat()}\n")
-            f.write("-" * 80 + "\n\n")
-        
-        with open(self.element_details_log_file, 'w', encoding='utf-8') as f:
-            f.write(f"Element Details Log - Session: {self.session_id}\n")
-            f.write(f"Started at: {datetime.now().isoformat()}\n")
-            f.write("-" * 80 + "\n\n")
-        
-        logger.info(f"PlaywrightLogger initialized. Logs will be saved to {self.session_dir}")
     
     async def store_element_info(self, element_index: int) -> Optional[Dict[str, Any]]:
         """
@@ -154,39 +138,6 @@ class PlaywrightLogger:
                     element_info["children_tags"] = child_tags
             except Exception as e:
                 logger.debug(f"Failed to get children info: {str(e)}")
-            
-            # 요소 상세 정보를 로그 파일에 기록
-            with open(self.element_details_log_file, 'a', encoding='utf-8') as f:
-                f.write(f"=== Element Index: {element_index} - {datetime.now().isoformat()} ===\n")
-                f.write(f"Tag: {element_info['tag_name']}\n")
-                f.write(f"XPath: {element_info['xpath']}\n")
-                
-                if "css_selector" in element_info:
-                    f.write(f"CSS Selector: {element_info['css_selector']}\n")
-                
-                f.write("Attributes:\n")
-                for key, value in element_node.attributes.items():
-                    f.write(f"  {key}: {value}\n")
-                
-                f.write(f"Visibility: {element_info['is_visible']}\n")
-                f.write(f"Interactive: {element_info['is_interactive']}\n")
-                
-                if "text_content" in element_info and element_info["text_content"]:
-                    text_content = element_info["text_content"]
-                    if len(text_content) > 200:
-                        text_content = text_content[:197] + "..."
-                    f.write(f"Text Content: {text_content}\n")
-                
-                if "has_parent" in element_info:
-                    f.write("Parent Element:\n")
-                    f.write(f"  has_parent: {element_info['has_parent']}\n")
-                
-                if "children_count" in element_info:
-                    f.write(f"Children Count: {element_info['children_count']}\n")
-                    if "children_tags" in element_info:
-                        f.write(f"Children Tags: {', '.join(element_info['children_tags'])}\n")
-                
-                f.write("-" * 80 + "\n\n")
             
             return element_info
             
@@ -273,50 +224,89 @@ class PlaywrightLogger:
             except Exception as e:
                 logger.error(f"Error storing element info: {str(e)}")
         
-        # 로그 파일에 기록
-        with open(self.detailed_log_file, 'a', encoding='utf-8') as f:
-            f.write(f"=== PRE-ACTION: {action_type} - {timestamp} ===\n")
+        # 통합 로그 파일에 기록
+        with open(self.log_file, 'a', encoding='utf-8') as f:
+            f.write(f"\n=== PRE-ACTION: {action_type} - {timestamp} ===\n")
             if current_url:
                 f.write(f"Current URL: {current_url}\n")
             if element_index is not None:
                 f.write(f"Element Index: {element_index}\n")
-                if element_info and "tag_name" in element_info:
-                    f.write(f"Element Tag: {element_info['tag_name']}\n")
+            if selector:
+                f.write(f"CSS Selector: {selector}\n")
             if xpath:
                 f.write(f"XPath: {xpath}\n")
-            if selector:
-                f.write(f"Selector: {selector}\n")
             if text:
                 f.write(f"Text: {text}\n")
             if url:
-                f.write(f"Target URL: {url}\n")
+                f.write(f"URL: {url}\n")
             
-            # 요소 정보가 있으면 중요 속성 기록
+            # 요소 정보가 있으면 상세 정보 기록 (한 번만 기록)
             if element_info:
-                f.write("Element Properties:\n")
-                for key in ['id', 'class', 'name', 'type', 'value', 'href', 'src', 'placeholder', 'aria-label', 'role']:
-                    if key in element_info:
-                        f.write(f"  {key}: {element_info[key]}\n")
+                f.write(f"\n=== ELEMENT DETAILS: {action_type} - {timestamp} ===\n")
+                f.write(f"Element Index: {element_index}\n")
+                f.write(f"Tag: {element_info.get('tag_name', 'unknown')}\n")
                 
+                # 텍스트 콘텐츠 (있는 경우)
                 if "text_content" in element_info and element_info["text_content"]:
                     text_content = element_info["text_content"]
-                    if len(text_content) > 100:
-                        text_content = text_content[:97] + "..."
-                    f.write(f"  text_content: {text_content}\n")
-            
-            f.write("-" * 80 + "\n\n")
+                    if len(text_content) > 200:
+                        text_content = text_content[:197] + "..."
+                    f.write(f"Text Content: {text_content}\n")
+                
+                # 가시성 및 상호작용 정보
+                f.write(f"Is Visible: {element_info.get('is_visible', False)}\n")
+                f.write(f"Is Enabled: {element_info.get('is_interactive', False)}\n")
+                
+                # 중요 속성 정보
+                if "attributes" in element_info:
+                    f.write("Attributes:\n")
+                    important_attrs = ['id', 'class', 'name', 'type', 'value', 'href', 'src', 'aria-label', 'role', 'title']
+                    for attr in important_attrs:
+                        if attr in element_info["attributes"]:
+                            f.write(f"  {attr}: {element_info['attributes'][attr]}\n")
+                
+                # 위치 및 크기 정보 (있는 경우)
+                if "position" in element_info and "size" in element_info:
+                    pos = element_info["position"]
+                    size = element_info["size"]
+                    f.write(f"Position: x={pos['x']}, y={pos['y']}\n")
+                    f.write(f"Size: width={size['width']}, height={size['height']}\n")
+                
+                # XPath 및 CSS 선택자
+                f.write(f"XPath: {element_info.get('xpath', '')}\n")
+                if "css_selector" in element_info:
+                    f.write(f"CSS Selector: {element_info['css_selector']}\n")
+                
+                # 부모 요소 정보
+                if "has_parent" in element_info and element_info["has_parent"]:
+                    f.write("Parent Element:\n")
+                    f.write(f"  tag_name: {element_info.get('parent_tag_name', 'unknown')}\n")
+                    f.write(f"  id: {element_info.get('parent_id', 'None')}\n")
+                    f.write(f"  class_name: {element_info.get('parent_class', 'None')}\n")
+                    f.write(f"  has_parent: {element_info['has_parent']}\n")
+                
+                # 자식 요소 정보
+                if "children_count" in element_info:
+                    f.write(f"Children Count: {element_info['children_count']}\n")
+                    if "children_tags" in element_info:
+                        f.write(f"Children Tags: {', '.join(element_info['children_tags'])}\n")
+                
+                f.write("-" * 80 + "\n")
+            else:
+                f.write("-" * 80 + "\n")
         
+        # JSON 로그를 위한 정보 구성
         pre_action_info = {
             "timestamp": timestamp,
-            "phase": "pre_action",
             "action_type": action_type,
+            "phase": "pre-action",
+            "element_index": element_index,
             "selector": selector,
             "xpath": xpath,
-            "element_index": element_index,
             "text": text,
             "url": url,
             "current_url": current_url,
-            "element_info": element_info or {}
+            "element_info": element_info
         }
         
         # JSON 로그에 pre-action 정보 추가
@@ -368,62 +358,111 @@ class PlaywrightLogger:
             try:
                 post_action_element_info = await self.store_element_info(element_index)
             except Exception as e:
-                logger.error(f"Error storing post-action element info: {str(e)}")
+                logger.debug(f"Failed to get post-action element info: {str(e)}")
         
-        # 로그 파일에 기록
-        with open(self.detailed_log_file, 'a', encoding='utf-8') as f:
-            f.write(f"=== POST-ACTION: {action_type} - {timestamp} ===\n")
+        # 요소 변경 사항 확인
+        changes = {}
+        if pre_action_element_info and post_action_element_info:
+            # 텍스트 내용 변경 확인
+            if pre_action_element_info.get('text_content') != post_action_element_info.get('text_content'):
+                changes['text_content'] = {
+                    'before': pre_action_element_info.get('text_content'),
+                    'after': post_action_element_info.get('text_content')
+                }
+            
+            # 가시성 변경 확인
+            if pre_action_element_info.get('is_visible') != post_action_element_info.get('is_visible'):
+                changes['is_visible'] = {
+                    'before': pre_action_element_info.get('is_visible'),
+                    'after': post_action_element_info.get('is_visible')
+                }
+            
+            # 활성화 상태 변경 확인
+            if pre_action_element_info.get('is_interactive') != post_action_element_info.get('is_interactive'):
+                changes['is_enabled'] = {
+                    'before': pre_action_element_info.get('is_interactive'),
+                    'after': post_action_element_info.get('is_interactive')
+                }
+            
+            # 속성 변경 확인
+            pre_attrs = pre_action_element_info.get('attributes', {})
+            post_attrs = post_action_element_info.get('attributes', {})
+            
+            for key in set(list(pre_attrs.keys()) + list(post_attrs.keys())):
+                if pre_attrs.get(key) != post_attrs.get(key):
+                    if 'attributes' not in changes:
+                        changes['attributes'] = {}
+                    changes['attributes'][key] = {
+                        'before': pre_attrs.get(key),
+                        'after': post_attrs.get(key)
+                    }
+        
+        # 통합 로그 파일에 기록 (간소화된 형태)
+        with open(self.log_file, 'a', encoding='utf-8') as f:
+            f.write(f"\n=== POST-ACTION: {action_type} - {timestamp} ===\n")
             if current_url:
                 f.write(f"Current URL: {current_url}\n")
             if element_index is not None:
                 f.write(f"Element Index: {element_index}\n")
-                if post_action_element_info and "tag_name" in post_action_element_info:
-                    f.write(f"Element Tag: {post_action_element_info['tag_name']}\n")
+            if selector:
+                f.write(f"CSS Selector: {selector}\n")
             if xpath:
                 f.write(f"XPath: {xpath}\n")
-            if selector:
-                f.write(f"Selector: {selector}\n")
             if text:
                 f.write(f"Text: {text}\n")
             if url:
-                f.write(f"Target URL: {url}\n")
+                f.write(f"URL: {url}\n")
+            
+            # 결과 또는 오류 기록
             if result:
-                f.write(f"Result: {result}\n")
+                f.write(f"\nResult: {result}\n")
             if error:
-                f.write(f"Error: {error}\n")
+                f.write(f"\nError: {error}\n")
             
-            # 요소 정보가 있으면 중요 속성 기록
-            if post_action_element_info:
-                f.write("Element Properties After Action:\n")
-                for key in ['id', 'class', 'name', 'type', 'value', 'href', 'src', 'placeholder', 'aria-label', 'role']:
-                    if key in post_action_element_info:
-                        f.write(f"  {key}: {post_action_element_info[key]}\n")
-                
-                if "text_content" in post_action_element_info and post_action_element_info["text_content"]:
-                    text_content = post_action_element_info["text_content"]
-                    if len(text_content) > 100:
-                        text_content = text_content[:97] + "..."
-                    f.write(f"  text_content: {text_content}\n")
+            # 추가 데이터 기록 (간소화)
+            if additional_data:
+                f.write("\n--- Additional Data ---\n")
+                for key, value in additional_data.items():
+                    if key != "element_details" and key != "post_action_element_details":
+                        f.write(f"{key}: {value}\n")
             
-            # 변경 사항 감지 및 기록
-            if pre_action_element_info and post_action_element_info:
-                changes = []
-                for key in pre_action_element_info:
-                    if key in post_action_element_info and pre_action_element_info[key] != post_action_element_info[key]:
-                        changes.append((key, pre_action_element_info[key], post_action_element_info[key]))
-                
-                if changes:
-                    f.write("Changes Detected:\n")
-                    for key, before, after in changes:
-                        # 텍스트가 너무 길면 잘라내기
-                        if isinstance(before, str) and len(before) > 50:
-                            before = before[:47] + "..."
-                        if isinstance(after, str) and len(after) > 50:
-                            after = after[:47] + "..."
-                        
-                        f.write(f"  {key}: {before} -> {after}\n")
+            # 요소 변경 사항 기록 (중요한 변경 사항만)
+            if changes:
+                f.write("\n--- Element Changes ---\n")
+                for key, value in changes.items():
+                    if key == 'attributes':
+                        f.write("Attributes Changes:\n")
+                        for attr_key, attr_value in value.items():
+                            f.write(f"  {attr_key}: {attr_value['before']} -> {attr_value['after']}\n")
+                    else:
+                        f.write(f"{key}: {value['before']} -> {value['after']}\n")
             
-            f.write("-" * 80 + "\n\n")
+            # 상세 요소 정보는 제거하고 간단한 요약만 기록
+            f.write("-" * 80 + "\n")
+        
+        # 액션 실행 결과를 간결하게 로그 파일에 기록
+        with open(self.log_file, 'a', encoding='utf-8') as f:
+            status = "ERROR" if error else "SUCCESS"
+            f.write(f"{timestamp} - {action_type} - {status}\n")
+            if element_index is not None:
+                tag = pre_action_element_info.get('tag_name', '') if pre_action_element_info else ''
+                f.write(f"  Element: {tag} (index: {element_index})\n")
+            if text:
+                f.write(f"  Text: {text}\n")
+            if url:
+                f.write(f"  URL: {url}\n")
+            if current_url:
+                f.write(f"  Current URL: {current_url}\n")
+            if result:
+                f.write(f"  Result: {result}\n")
+            if error:
+                f.write(f"  Error: {error}\n")
+            
+            # 변경 사항이 있으면 간략하게 기록
+            if changes:
+                f.write("  Changes detected in element properties\n")
+            
+            f.write("\n")
         
         # 속성 정보 정리 및 보강
         formatted_attributes = {}
@@ -469,30 +508,6 @@ class PlaywrightLogger:
         # JSON 로그에 post-action 정보 추가
         self.actions.append(action_data)
         self._save_json()
-        
-        # 액션 실행 결과를 로그 파일에 기록
-        with open(self.log_file, 'a', encoding='utf-8') as f:
-            status = "ERROR" if error else "SUCCESS"
-            f.write(f"{timestamp} - {action_type} - {status}\n")
-            if element_index is not None:
-                tag = pre_action_element_info.get('tag_name', '') if pre_action_element_info else ''
-                f.write(f"  Element: {tag} (index: {element_index})\n")
-            if text:
-                f.write(f"  Text: {text}\n")
-            if url:
-                f.write(f"  URL: {url}\n")
-            if current_url:
-                f.write(f"  Current URL: {current_url}\n")
-            if result:
-                f.write(f"  Result: {result}\n")
-            if error:
-                f.write(f"  Error: {error}\n")
-            
-            # 변경 사항이 있으면 간략하게 기록
-            if changes:
-                f.write("  Changes detected in element properties\n")
-            
-            f.write("\n")
         
         return action_data
     

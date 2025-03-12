@@ -1,21 +1,21 @@
 {
   "session_id": "current",
-  "timestamp": "2025-03-12T15:01:28.575812",
+  "timestamp": "2025-03-12T15:27:10.890725",
   "actions": [
     {
-      "timestamp": "2025-03-12T15:00:48.467577",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:26:25.783254",
       "action_type": "go_to_url",
+      "phase": "pre-action",
+      "element_index": null,
       "selector": null,
       "xpath": null,
-      "element_index": null,
       "text": null,
       "url": "https://www.google.com",
       "current_url": "about:blank",
-      "element_info": {}
+      "element_info": null
     },
     {
-      "timestamp": "2025-03-12T15:00:51.042915",
+      "timestamp": "2025-03-12T15:26:28.801344",
       "phase": "post_action",
       "action_type": "go_to_url",
       "selector": null,
@@ -30,7 +30,7 @@
       "changes": {},
       "additional_data": {
         "action_params": "{'url': 'https://www.google.com'}",
-        "duration_ms": 2572.125,
+        "duration_ms": 3014.6389999999997,
         "page_changed": true,
         "previous_url": "about:blank",
         "previous_title": "",
@@ -41,17 +41,17 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:00:55.790033",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:26:32.860836",
       "action_type": "input_text",
+      "phase": "pre-action",
+      "element_index": 10,
       "selector": "#APjFqb",
       "xpath": "//*[@id=\"APjFqb\"]",
-      "element_index": 8,
       "text": "Python browser automation",
       "url": null,
       "current_url": "https://www.google.com/",
       "element_info": {
-        "index": 8,
+        "index": 10,
         "tag_name": "textarea",
         "xpath": "html/body/div/div[3]/form/div/div/div/div/div[2]/textarea",
         "is_visible": true,
@@ -79,10 +79,10 @@
           "rows": "1",
           "spellcheck": "false",
           "jsaction": "paste:puy29d",
-          "data-ved": "0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ39UDCAQ"
+          "data-ved": "0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ39UDCAY"
         },
         "text_content": "",
-        "timestamp": "2025-03-12T15:00:55.790052",
+        "timestamp": "2025-03-12T15:26:32.860882",
         "id": "APjFqb",
         "class": "gLFyf",
         "name": "q",
@@ -97,12 +97,12 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:00:56.042888",
+      "timestamp": "2025-03-12T15:26:33.130386",
       "phase": "post_action",
       "action_type": "input_text",
       "selector": "#APjFqb",
       "xpath": "//*[@id=\"APjFqb\"]",
-      "element_index": 8,
+      "element_index": 10,
       "text": "Python browser automation",
       "url": null,
       "current_url": "https://www.google.com/",
@@ -125,24 +125,24 @@
         "inner_text": "",
         "has_parent": true
       },
-      "result": "⌨️  Input \"Python browser automation\" into index 8",
+      "result": "⌨️  Input \"Python browser automation\" into index 10",
       "error": null,
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:00:55.790052",
-          "after": "2025-03-12T15:00:56.042904"
+          "before": "2025-03-12T15:26:32.860882",
+          "after": "2025-03-12T15:26:33.130400"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 8, 'text': 'Python browser automation'}",
-        "duration_ms": 168.603,
+        "action_params": "{'index': 10, 'text': 'Python browser automation'}",
+        "duration_ms": 184.421,
         "page_changed": false,
         "previous_url": "https://www.google.com/",
         "previous_title": "Google",
         "new_url": "https://www.google.com/",
         "new_title": "Google",
         "element_details": {
-          "index": 8,
+          "index": 10,
           "tag_name": "textarea",
           "text_content": "",
           "inner_text": "",
@@ -188,17 +188,17 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:01.819088",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:26:40.692563",
       "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 26,
       "selector": "input.gNO89b",
       "xpath": "/html/body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[4]/div[6]/center[1]/input[1]",
-      "element_index": 24,
       "text": null,
       "url": null,
       "current_url": "https://www.google.com/",
       "element_info": {
-        "index": 24,
+        "index": 26,
         "tag_name": "input",
         "xpath": "html/body/div/div[3]/form/div/div/div[2]/div[4]/div[6]/center/input",
         "is_visible": true,
@@ -212,11 +212,11 @@
           "role": "button",
           "tabindex": "0",
           "type": "submit",
-          "data-ved": "0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4",
+          "data-ved": "0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA",
           "style": ""
         },
         "text_content": "",
-        "timestamp": "2025-03-12T15:01:01.819112",
+        "timestamp": "2025-03-12T15:26:40.692586",
         "class": "gNO89b",
         "name": "btnK",
         "type": "submit",
@@ -229,15 +229,15 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:03.365840",
+      "timestamp": "2025-03-12T15:26:43.108459",
       "phase": "post_action",
       "action_type": "click_element",
       "selector": "input.gNO89b",
       "xpath": "/html/body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[4]/div[6]/center[1]/input[1]",
-      "element_index": 24,
+      "element_index": 26,
       "text": null,
       "url": null,
-      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
       "attributes": {
         "class": "gNO89b",
         "name": "btnK",
@@ -255,24 +255,24 @@
         "inner_text": "",
         "has_parent": true
       },
-      "result": "🖱️  Clicked button with index 24: ",
+      "result": "🖱️  Clicked button with index 26: ",
       "error": null,
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:01:01.819112",
-          "after": "2025-03-12T15:01:03.365860"
+          "before": "2025-03-12T15:26:40.692586",
+          "after": "2025-03-12T15:26:43.108489"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 24}",
-        "duration_ms": 1539.133,
+        "action_params": "{'index': 26}",
+        "duration_ms": 2402.345,
         "page_changed": true,
         "previous_url": "https://www.google.com/",
         "previous_title": "Google",
-        "new_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+        "new_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
         "new_title": "Python browser automation - Google 검색",
         "element_details": {
-          "index": 24,
+          "index": 26,
           "tag_name": "input",
           "text_content": "",
           "inner_text": "",
@@ -311,67 +311,64 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:12.915171",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:26:52.567505",
       "action_type": "click_element",
-      "selector": "a.zReHs",
-      "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
+      "phase": "pre-action",
       "element_index": 25,
+      "selector": "a",
+      "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
       "text": null,
       "url": null,
-      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
       "element_info": {
         "index": 25,
         "tag_name": "a",
-        "xpath": "html/body/div[3]/div/div[12]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/div/span/a",
+        "xpath": "html/body/div[3]/div/div[12]/div/div/div[2]/div[2]/div/div/div/div/div/div/div/div/div/span/a",
         "is_visible": true,
         "is_interactive": true,
         "is_top_element": true,
         "attributes": {
           "jsname": "UWckNb",
-          "class": "zReHs",
           "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
-          "data-ved": "2ahUKEwjTqfvw7oOMAxUD0DQHHbFtPA8QFnoECBYQAQ",
-          "ping": "/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test&ved=2ahUKEwjTqfvw7oOMAxUD0DQHHbFtPA8QFnoECBYQAQ"
+          "data-ved": "2ahUKEwivxv_O9IOMAxVIsFYBHdymApQQFnoECBkQAQ",
+          "ping": "/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test&ved=2ahUKEwivxv_O9IOMAxVIsFYBHdymApQQFnoECBkQAQ"
         },
         "text_content": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
-        "timestamp": "2025-03-12T15:01:12.915197",
-        "class": "zReHs",
+        "timestamp": "2025-03-12T15:26:52.567544",
         "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
-        "css_selector": "a.zReHs",
         "inner_text": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
         "has_parent": true,
-        "children_count": 2,
+        "children_count": 3,
         "children_tags": [
+          "br",
           "h3",
           "div"
         ]
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:14.165923",
+      "timestamp": "2025-03-12T15:26:54.175556",
       "phase": "post_action",
       "action_type": "click_element",
-      "selector": "a.zReHs",
+      "selector": "a",
       "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
       "element_index": 25,
       "text": null,
       "url": null,
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
       "attributes": {
-        "class": "zReHs",
         "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "tag_name": "a",
         "text_content": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
-        "xpath": "html/body/div[3]/div/div[12]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/div/span/a",
+        "xpath": "html/body/div[3]/div/div[12]/div/div/div[2]/div[2]/div/div/div/div/div/div/div/div/div/span/a",
         "is_visible": true,
         "is_interactive": true,
         "is_top_element": true,
-        "css_selector": "a.zReHs",
         "inner_text": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
         "has_parent": true,
-        "children_count": 2,
+        "children_count": 3,
         "children_tags": [
+          "br",
           "h3",
           "div"
         ]
@@ -380,15 +377,15 @@
       "error": null,
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:01:12.915197",
-          "after": "2025-03-12T15:01:14.165945"
+          "before": "2025-03-12T15:26:52.567544",
+          "after": "2025-03-12T15:26:54.175576"
         }
       },
       "additional_data": {
         "action_params": "{'index': 25}",
-        "duration_ms": 1116.731,
+        "duration_ms": 1470.985,
         "page_changed": true,
-        "previous_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+        "previous_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
         "previous_title": "Python browser automation - Google 검색",
         "new_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "new_title": "Selenium Python Tutorial (with Example) | BrowserStack",
@@ -396,23 +393,22 @@
           "index": 25,
           "tag_name": "a",
           "text_content": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com › Guide",
-          "inner_text": "Selenium Python Tutorial (with Example)\nBrowserStack\nhttps://www.browserstack.com › Guide",
+          "inner_text": "\nSelenium Python Tutorial (with Example)\nBrowserStack\nhttps://www.browserstack.com › Guide",
           "is_visible": true,
           "is_enabled": true,
           "attributes": {
-            "class": "zReHs",
             "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test"
           },
           "position": {
             "x": 90.5,
-            "y": 218
+            "y": 220.5
           },
           "size": {
-            "width": 652,
-            "height": 72
+            "width": 360.15625,
+            "height": 64.0390625
           },
           "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
-          "css_selector": "a.zReHs",
+          "css_selector": "a",
           "parent_info": {
             "tag_name": "span",
             "id": null,
@@ -420,8 +416,9 @@
             "has_parent": true
           },
           "children_info": {
-            "count": 2,
+            "count": 3,
             "tags": [
+              "br",
               "h3",
               "div"
             ]
@@ -431,19 +428,19 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:21.646790",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:27:03.416226",
       "action_type": "extract_content",
+      "phase": "pre-action",
+      "element_index": null,
       "selector": null,
       "xpath": null,
-      "element_index": null,
       "text": null,
       "url": null,
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
-      "element_info": {}
+      "element_info": null
     },
     {
-      "timestamp": "2025-03-12T15:01:21.831628",
+      "timestamp": "2025-03-12T15:27:03.623747",
       "phase": "post_action",
       "action_type": "extract_content",
       "selector": null,
@@ -458,7 +455,7 @@
       "changes": {},
       "additional_data": {
         "action_params": "{'include_links': False}",
-        "duration_ms": 181.117,
+        "duration_ms": 202.678,
         "page_changed": false,
         "previous_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "previous_title": "Selenium Python Tutorial (with Example) | BrowserStack",
@@ -469,34 +466,34 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:28.568062",
-      "phase": "pre_action",
+      "timestamp": "2025-03-12T15:27:10.881401",
       "action_type": "done",
+      "phase": "pre-action",
+      "element_index": null,
       "selector": null,
       "xpath": null,
-      "element_index": null,
-      "text": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "text": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "url": null,
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
-      "element_info": {}
+      "element_info": null
     },
     {
-      "timestamp": "2025-03-12T15:01:28.575542",
+      "timestamp": "2025-03-12T15:27:10.890414",
       "phase": "post_action",
       "action_type": "done",
       "selector": null,
       "xpath": null,
       "element_index": null,
-      "text": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "text": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "url": null,
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
       "attributes": {},
-      "result": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "result": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "error": null,
       "changes": {},
       "additional_data": {
-        "action_params": "{'text': 'The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.'}",
-        "duration_ms": 3.0469999999999997,
+        "action_params": "{'text': 'The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.'}",
+        "duration_ms": 3.796,
         "page_changed": false,
         "previous_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "previous_title": "Selenium Python Tutorial (with Example) | BrowserStack",
@@ -509,15 +506,15 @@
   ],
   "formatted_actions": [
     {
-      "timestamp": "2025-03-12T15:00:48.467577",
+      "timestamp": "2025-03-12T15:26:25.783254",
       "action_type": "go_to_url",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {},
       "url": "https://www.google.com",
       "current_url": "about:blank"
     },
     {
-      "timestamp": "2025-03-12T15:00:51.042915",
+      "timestamp": "2025-03-12T15:26:28.801344",
       "action_type": "go_to_url",
       "phase": "post_action",
       "element_info": {},
@@ -526,7 +523,7 @@
       "result": "🔗  Navigated to https://www.google.com",
       "additional_data": {
         "action_params": "{'url': 'https://www.google.com'}",
-        "duration_ms": 2572.125,
+        "duration_ms": 3014.6389999999997,
         "page_changed": true,
         "previous_url": "about:blank",
         "previous_title": "",
@@ -537,11 +534,11 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:00:55.790033",
+      "timestamp": "2025-03-12T15:26:32.860836",
       "action_type": "input_text",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {
-        "index": 8,
+        "index": 10,
         "selector": "#APjFqb",
         "xpath": "//*[@id=\"APjFqb\"]",
         "tag_name": "textarea",
@@ -566,33 +563,33 @@
       "current_url": "https://www.google.com/"
     },
     {
-      "timestamp": "2025-03-12T15:00:56.042888",
+      "timestamp": "2025-03-12T15:26:33.130386",
       "action_type": "input_text",
       "phase": "post_action",
       "element_info": {
-        "index": 8,
+        "index": 10,
         "selector": "#APjFqb",
         "xpath": "//*[@id=\"APjFqb\"]"
       },
       "text": "Python browser automation",
       "current_url": "https://www.google.com/",
-      "result": "⌨️  Input \"Python browser automation\" into index 8",
+      "result": "⌨️  Input \"Python browser automation\" into index 10",
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:00:55.790052",
-          "after": "2025-03-12T15:00:56.042904"
+          "before": "2025-03-12T15:26:32.860882",
+          "after": "2025-03-12T15:26:33.130400"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 8, 'text': 'Python browser automation'}",
-        "duration_ms": 168.603,
+        "action_params": "{'index': 10, 'text': 'Python browser automation'}",
+        "duration_ms": 184.421,
         "page_changed": false,
         "previous_url": "https://www.google.com/",
         "previous_title": "Google",
         "new_url": "https://www.google.com/",
         "new_title": "Google",
         "element_details": {
-          "index": 8,
+          "index": 10,
           "tag_name": "textarea",
           "text_content": "",
           "inner_text": "",
@@ -638,11 +635,11 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:01.819088",
+      "timestamp": "2025-03-12T15:26:40.692563",
       "action_type": "click_element",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {
-        "index": 24,
+        "index": 26,
         "selector": "input.gNO89b",
         "xpath": "/html/body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[4]/div[6]/center[1]/input[1]",
         "tag_name": "input",
@@ -664,32 +661,32 @@
       "current_url": "https://www.google.com/"
     },
     {
-      "timestamp": "2025-03-12T15:01:03.365840",
+      "timestamp": "2025-03-12T15:26:43.108459",
       "action_type": "click_element",
       "phase": "post_action",
       "element_info": {
-        "index": 24,
+        "index": 26,
         "selector": "input.gNO89b",
         "xpath": "/html/body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[4]/div[6]/center[1]/input[1]"
       },
-      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
-      "result": "🖱️  Clicked button with index 24: ",
+      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
+      "result": "🖱️  Clicked button with index 26: ",
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:01:01.819112",
-          "after": "2025-03-12T15:01:03.365860"
+          "before": "2025-03-12T15:26:40.692586",
+          "after": "2025-03-12T15:26:43.108489"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 24}",
-        "duration_ms": 1539.133,
+        "action_params": "{'index': 26}",
+        "duration_ms": 2402.345,
         "page_changed": true,
         "previous_url": "https://www.google.com/",
         "previous_title": "Google",
-        "new_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+        "new_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
         "new_title": "Python browser automation - Google 검색",
         "element_details": {
-          "index": 24,
+          "index": 26,
           "tag_name": "input",
           "text_content": "",
           "inner_text": "",
@@ -728,54 +725,53 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:12.915171",
+      "timestamp": "2025-03-12T15:26:52.567505",
       "action_type": "click_element",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {
         "index": 25,
-        "selector": "a.zReHs",
+        "selector": "a",
         "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
         "tag_name": "a",
         "is_visible": true,
         "is_interactive": true,
-        "css_selector": "a.zReHs",
         "attributes": {
-          "class": "zReHs",
           "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test"
         },
         "text_content": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
         "inner_text": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com› Guide",
         "has_parent": true,
-        "children_count": 2,
+        "children_count": 3,
         "children_tags": [
+          "br",
           "h3",
           "div"
         ]
       },
-      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE"
+      "current_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ"
     },
     {
-      "timestamp": "2025-03-12T15:01:14.165923",
+      "timestamp": "2025-03-12T15:26:54.175556",
       "action_type": "click_element",
       "phase": "post_action",
       "element_info": {
         "index": 25,
-        "selector": "a.zReHs",
+        "selector": "a",
         "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]"
       },
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
       "result": "🖱️  Clicked button with index 25: Selenium Python Tutorial (with Example)",
       "changes": {
         "timestamp": {
-          "before": "2025-03-12T15:01:12.915197",
-          "after": "2025-03-12T15:01:14.165945"
+          "before": "2025-03-12T15:26:52.567544",
+          "after": "2025-03-12T15:26:54.175576"
         }
       },
       "additional_data": {
         "action_params": "{'index': 25}",
-        "duration_ms": 1116.731,
+        "duration_ms": 1470.985,
         "page_changed": true,
-        "previous_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=ECPRZ-HIMv-V0PEP1bC0IQ&iflsig=ACkRmUkAAAAAZ9ExIH_-kfSDXRndtz7J7hSbY-UF7N8u&ved=0ahUKEwjhkL7q7oOMAxX_CjQIHVUYLQQQ4dUDCA4&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSM8vUABYT3AAeACQAQGYAbMBoAHsBKoBAzAuNLgBDMgBAPgBAZgCA6AC1QPCAgkQABiABBgTGA2YAwCSBwMwLjOgB5sb&sclient=gws-wiz&sei=HiPRZ--KCajB0-kP4ZnywQE",
+        "previous_url": "https://www.google.com/search?q=Python+browser+automation&sca_esv=0d8671cb2a035860&source=hp&ei=EinRZ8OqEcSH0PEP0fWwyAM&iflsig=ACkRmUkAAAAAZ9E3Ik4068EloOquzAQQcblnTpnVK2fB&ved=0ahUKEwjD-8zH9IOMAxXEAzQIHdE6DDkQ4dUDCBA&oq=Python+browser+automation&gs_lp=Egdnd3Mtd2l6IhlQeXRob24gYnJvd3NlciBhdXRvbWF0aW9uMgcQABiABBgTMgcQABiABBgTMgcQABiABBgTMgYQABgTGB4yBhAAGBMYHjIGEAAYExgeMgYQABgTGB4yBhAAGBMYHjIIEAAYExgIGB4yCBAAGBMYBRgeSMc9UABYS3AAeACQAQOYAcMCoAHsCaoBAzMtNLgBDMgBAPgBAZgCAaACswKYAwCSBwMzLTGgB5sb&sclient=gws-wiz&sei=ISnRZ_a7FNel2roP47TECQ",
         "previous_title": "Python browser automation - Google 검색",
         "new_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "new_title": "Selenium Python Tutorial (with Example) | BrowserStack",
@@ -783,23 +779,22 @@
           "index": 25,
           "tag_name": "a",
           "text_content": "Selenium Python Tutorial (with Example)BrowserStackhttps://www.browserstack.com › Guide",
-          "inner_text": "Selenium Python Tutorial (with Example)\nBrowserStack\nhttps://www.browserstack.com › Guide",
+          "inner_text": "\nSelenium Python Tutorial (with Example)\nBrowserStack\nhttps://www.browserstack.com › Guide",
           "is_visible": true,
           "is_enabled": true,
           "attributes": {
-            "class": "zReHs",
             "href": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test"
           },
           "position": {
             "x": 90.5,
-            "y": 218
+            "y": 220.5
           },
           "size": {
-            "width": 652,
-            "height": 72
+            "width": 360.15625,
+            "height": 64.0390625
           },
           "xpath": "//*[@id=\"rso\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]/a[1]",
-          "css_selector": "a.zReHs",
+          "css_selector": "a",
           "parent_info": {
             "tag_name": "span",
             "id": null,
@@ -807,8 +802,9 @@
             "has_parent": true
           },
           "children_info": {
-            "count": 2,
+            "count": 3,
             "tags": [
+              "br",
               "h3",
               "div"
             ]
@@ -818,14 +814,14 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:21.646790",
+      "timestamp": "2025-03-12T15:27:03.416226",
       "action_type": "extract_content",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {},
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test"
     },
     {
-      "timestamp": "2025-03-12T15:01:21.831628",
+      "timestamp": "2025-03-12T15:27:03.623747",
       "action_type": "extract_content",
       "phase": "post_action",
       "element_info": {},
@@ -833,7 +829,7 @@
       "result": "📄  Extracted page as text\n: HomeGuideSelenium Python Tutorial (with Example)On This PageOn This PageWhy do Developers prefer Python for writing Selenium Test Scripts?Getting Started with Selenium PythonSelenium Python Example: How to run your first Test?Interacting with Common Elements in SeleniumNavigate through HTML DOM ElementsStep 1. Locate and Interact with Navigation LinksStep 2. Access and Interact with Header SectionsStep 3. Interact with Forms and Input FieldsNavigate through Windows and FramesHandling WaitsAssertions and ValidationsHandling Alerts and Pop-upsCleanup and TeardownTesting Framework Integration1. Integrate with unittest Framework2. Integrate with pytest FrameworkSelenium Python ResourcesBest Practices using Selenium WebDriver with PythonWhy run Selenium Python Tests on BrowserStack Real Device Cloud?Selenium Python Tutorial (with Example)New features are regularly added to web applications to boost user engagement. To ensure these updates work as intended and that the user interface remains functional, automated testing is crucial. Selenium is a widely-used tool for this type of automation testing.Selenium is an open-source automation testing tool that supports various scripting languages such as C#, Java, Perl, Ruby, JavaScript, and others. The choice of scripting language can be made based on the specific requirements of the application being tested.Python is one of the most popular choices when it comes to scripting with 51% of the developers using it, as suggested by theStackOverflow 2024 annual survey.Why do Developers prefer Python for writing Selenium Test Scripts?Developers prefer Python for writing Selenium test scripts because of its simplicity, readability, and ease of use. Python’s clear and concise syntax allows for faster script development and easier maintenance, which is crucial in testing scenarios.Additionally, Python has a rich set of libraries and frameworks that complement Selenium, making it easier to handle complex tasks such as data manipulation, reporting, and integration with other tools.Python’s extensive community support and documentation also provide valuable resources for troubleshooting and improving test scripts. These factors make Python a popular choice for Selenium automation.Getting Started with Selenium PythonGetting started with Selenium using Python involves setting up an environment where you can write and run automated test scripts for web applications.Selenium, combined with Python, offers a powerful and easy-to-learn toolset for automating browser interactions. Python’s simple syntax makes it ideal for quickly writing clear and maintainable test scripts.To begin, you’ll need to install the Selenium WebDriver, set up a compatible browser, and learn the basics of locating web elements, interacting with them, and running test cases. This combination is perfect for testing dynamic and responsive web applications efficiently.Selenium Python Example: How to run your first Test?To run Selenium Python Tests here are the steps to follow:Step 1.Import the Necessary ClassesFirst, you’ll need to import the WebDriver and Keys classes from Selenium. These classes help you interact with a web browser and emulate keyboard actions.fromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeysCopiedwebdriver:Allows you to control the browser.Keys:Lets you simulate keyboard key presses.Step 2.Create a WebDriver InstanceTo interact with a browser, you’ll need to create an instance of WebDriver. In this example, we use Chrome:driver=webdriver.Chrome('./chromedriver')CopiedMake sure chromedriver is in the same directory as your Python script. This command opens a new Chrome browser window.Step 3.Load a WebsiteUse the .get() method to navigate to a website. This method waits for the page to load completely:driver.get(\"https://www.python.org\")CopiedThis will open Python’s official website in the browser.Step 4.Check the Page TitleOnce the page is loaded, you can retrieve and print the page title to verify you’re on the right page:print(driver.title)CopiedYou should see:WelcometoPython.orgCopiedStep 5.Interact with the Search BarTo perform a search, locate the search bar element, enter a query, and submit it. Here’s how to find the search bar by its name attribute and interact with it:search_bar=driver.find_element_by_name(\"q\")search_bar.clear()search_bar.send_keys(\"getting started with python\")search_bar.send_keys(Keys.RETURN)CopiedAs an explanation :find_element_by_name(“q”):Finds the search bar element.clear():Clears any existing text.send_keys(“getting started with python”):Types the query into the search bar.send_keys(Keys.RETURN):Simulates pressing the Return (Enter) key.Step 6.Verify the Resulting URLAfter submitting the search query, you can check the updated URL to confirm the search results page:print(driver.current_url)CopiedYou should see a URL similar to:https://www.python.org/search/?q=getting+started+with+python&submit=Step 7.Close the BrowserFinally, close the browser session to end the test:driver.close()CopiedSummary :Here is the complete script for your first Selenium test in Python. Save this code in a file named selenium_test.py and run it using python selenium_test.py:fromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeys# Create a new instance of the Chrome driverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org\")# Print the page titleprint(driver.title)# Find the search bar using its name attributesearch_bar=driver.find_element_by_name(\"q\")search_bar.clear()search_bar.send_keys(\"getting started with python\")search_bar.send_keys(Keys.RETURN)# Print the current URLprint(driver.current_url)# Close the browser windowdriver.close()CopiedAlso Read:How to run Selenium tests on Chrome using ChromeDriverInteracting with Common Elements in SeleniumSelenium allows you to perform a variety of actions on web elements. You have already touched upon entering input, here’s how to interact with buttons, and dropdowns:Assuming you want to click a button with the ID “submit-button” after entering the input in the search bar :# Locate the button by its ID attributebutton=driver.find_element_by_id(\"submit-button\")# Click the buttonbutton.click()CopiedIf you need to click a link by its text:# Locate the link by its link textlink=driver.find_element_by_link_text(\"Click Here\")# Click the linklink.click()CopiedExplanation:find_element_by_id(“submit-button”):Finds the button with the ID “submit-button”.find_element_by_link_text(“Click Here”):Finds a link with the text “Click Here”.click():Simulates a mouse click on the element.Read More:Selenium Testing with Python: Automated Testing of a Signup FormThough dropdowns are not present on this site, they are quite common for web application testingFor dropdown menus, Selenium provides the Select class to handle options within <select> elements.Example:Selecting an Option from a DropdownAssuming you have a dropdown menu with the ID “dropdown-menu”:fromselenium.webdriver.support.uiimportSelect# Locate the dropdown menu by its ID attributedropdown=Select(driver.find_element_by_id(\"dropdown-menu\"))# Select an option by visible textdropdown.select_by_visible_text(\"Option 1\")# Or select an option by valuedropdown.select_by_value(\"option1\")# Or select an option by index (0-based index)dropdown.select_by_index(0)CopiedExplanation:Select(driver.find_element_by_id(“dropdown-menu”)):Creates a Select object for the dropdown menu.select_by_visible_text(“Option 1”):Selects an option by its visible text.select_by_value(“option1”):Selects an option by its value attribute.select_by_index(0):Selects an option by its index in the dropdown.Navigate through HTML DOM ElementsThe HTML Document Object Model (DOM) represents the structure of a web page as a tree of objects. Selenium allows you to interact with these elements using various locator strategies.In our first test script, we have already used some of the methods used to navigate DOM elements. This section will be a slightly more detailed view into how you can use different methods to locate and interact with elements on the Python.org website.Read More:Page Object Model and Page Factory in Selenium PythonStep 1. Locate and Interact with Navigation LinksExample: Clicking the “Downloads” LinkTo click the “Downloads” link, you can use the.find_element_by_link_text()method, but here’s how to use other locators to achieve the same, example by usingfind_element_by_xpath:fromseleniumimportwebdriver# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Locate the \"Downloads\" link using XPathdownloads_link=driver.find_element_by_xpath(\"//a[text()='Downloads']\")# Click the \"Downloads\" linkdownloads_link.click()# Optionally, print the current URL to confirm navigationprint(driver.current_url)# Close the browserdriver.close()CopiedExplanation:XPath://a[text()='Downloads']Copiedlocates the “Downloads” link based on its visible text.Step 2. Access and Interact with Header SectionsExample: Accessing the Main HeaderTo access the main header text, you can use different locators to find the header element.Using find_element_by_class_name:fromseleniumimportwebdriver# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Locate the header element using its class nameheader=driver.find_element_by_class_name(\"introduction\")# Print the text of the headerprint(header.text)# Close the browserdriver.close()CopiedExplanation:Class Name:“introduction” is used to find the header element based on its class.Step 3. Interact with Forms and Input FieldsExample: Filling Out and Submitting the Search FormTo interact with the search form, you can use the .find_element_by_name() method to locate the input field.Using find_element_by_name:fromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeys# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Locate the search bar using its name attributesearch_bar=driver.find_element_by_name(\"q\")# Clear any existing text and enter a new search termsearch_bar.clear()search_bar.send_keys(\"Python Documentation\")search_bar.send_keys(Keys.RETURN)# Optionally, print the current URL to confirm search resultsprint(driver.current_url)# Close the browserdriver.close()CopiedExplanation:Name Attribute:find_element_by_name(“q”)locates the search input field by its name attribute.Navigate through Windows and FramesWhen working with multiple browser windows or tabs, or dealing with iframes (frames), you may need to switch contexts to interact with different elements.Step1. Handling Multiple Browser Windows or TabsExample: Switching Between WindowsTo handle multiple browser windows or tabs:fromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeysimporttime# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Open a new tab with a different URLdriver.execute_script(\"window.open('https://www.google.com', '_blank');\")# Switch to the new tabdriver.switch_to.window(driver.window_handles[1])# Perform actions in the new tab (e.g., search for 'Selenium')search_bar=driver.find_element_by_name(\"q\")search_bar.clear()search_bar.send_keys(\"Selenium\")search_bar.send_keys(Keys.RETURN)# Switch back to the original tabdriver.switch_to.window(driver.window_handles[0])# Close the browserdriver.quit()CopiedExplanation:window_handles:Retrieves a list of window handles. Switch to a specific window using switch_to.window().execute_script(“window.open()”):Opens a new tab or window.Step2. Switching Between FramesExample: Switching to an iFrameTo switch to and interact with elements within an iframe:fromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeysimporttime# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Example site with iframe (replace with an actual URL that contains iframes)driver.get(\"https://www.w3schools.com/html/html_iframe.asp\")# Switch to the iframe using its name or IDdriver.switch_to.frame(\"iframeResult\")# Perform actions within the iframeprint(driver.find_element_by_tag_name(\"h1\").text)# Switch back to the default contentdriver.switch_to.default_content()# Close the browserdriver.quit()CopiedExplanation:switch_to.frame():Switches to a specific iframe.switch_to.default_content():Switches back to the main page.Handling WaitsDynamic content can load at different times, so using waits helps ensure elements are present before interacting with them.Step 1. Implicit WaitsExample: Using Implicit Waitsfromseleniumimportwebdriver# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Set implicit waitdriver.implicitly_wait(10)# seconds# Open the Python websitedriver.get(\"https://www.python.org/\")# Locate an element with implicit waitsearch_bar=driver.find_element_by_name(\"q\")search_bar.send_keys(\"Python\")# Close the browserdriver.quit()CopiedExplanation:implicitly_wait():Sets a default wait time for finding elements. If an element is not immediately found, WebDriver will wait up to the specified time.Step 2. Explicit Waitsfromseleniumimportwebdriverfromselenium.webdriver.common.byimportByfromselenium.webdriver.support.uiimportWebDriverWaitfromselenium.webdriver.supportimportexpected_conditionsasEC# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Define WebDriverWait with a maximum wait time of 10 secondswait=WebDriverWait(driver,10)# Wait for the search bar to be present in the DOMsearch_bar=wait.until(EC.presence_of_element_located((By.NAME,\"q\")))# Perform actions on the search barsearch_bar.send_keys(\"Python\")# Close the browserdriver.quit()CopiedExplanation:WebDriverWait(driver, 10):Creates an instance of WebDriverWait, specifying a maximum wait time of 10 seconds.wait.until(EC.presence_of_element_located((By.NAME, “q”))):Pauses the script until the search bar element is found by its name attribute. If the element is not found within 10 seconds, a TimeoutException will be raised.Must Read:How to use Wait commands in Selenium WebDriverAssertions and ValidationsTo ensure that the application behaves as expected, you can use assertions and validations.Verifying Expected Conditions Using AssertionsExample: Verifying Page Title and Search Resultsfromseleniumimportwebdriverfromselenium.webdriver.common.keysimportKeysfromselenium.webdriver.support.uiimportWebDriverWaitfromselenium.webdriver.supportimportexpected_conditionsasEC# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open the Python websitedriver.get(\"https://www.python.org/\")# Use WebDriverWait to wait for the search bar to be presentwait=WebDriverWait(driver,10)search_bar=wait.until(EC.presence_of_element_located((By.NAME,\"q\")))# Perform searchsearch_bar.send_keys(\"Python\")search_bar.send_keys(Keys.RETURN)# Verify the title contains \"Python\"assert\"Python\"indriver.title# Verify search results contain expected textresults=wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,\"ul.list-recent-events\")))assert\"Python\"inresults.text# Print the results to verifyprint(driver.title)print(results.text)# Close the browserdriver.quit()CopiedExplanation:Assertions:Used to check if the conditions are met. For example, checking if the title or text of elements matches expected values.assert:Verifies conditions and will raise an AssertionError if the condition is not true.Handling Alerts and Pop-upsWeb applications often use JavaScript alerts, confirmation dialogs, or prompts to interact with users. Selenium provides ways to handle these pop-ups effectively.Dealing with JavaScript AlertsJavaScript alerts are simple pop-up messages that require user interaction to dismiss. Selenium allows you to interact with these alerts using the switch_to.alert() method.fromseleniumimportwebdriverfromselenium.webdriver.common.byimportByfromselenium.webdriver.common.keysimportKeys# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open a website that triggers an alert (example URL)driver.get(\"https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/Alert.html\")# Click a button that triggers an alerttrigger_alert_button=driver.find_element(By.ID,\"alertButton\")# Adjust locator as neededtrigger_alert_button.click()# Switch to the alert and accept italert=driver.switch_to.alertprint(\"Alert text:\",alert.text)alert.accept()# Close the browserdriver.quit()CopiedExplanation:switch_to.alert:Switches the context to the alert. Once switched, you can interact with the alert.alert.accept():Accepts the alert, which is equivalent to clicking “OK” on the alert.Other Alert Actions:alert.dismiss():Clicks “Cancel” on a confirmation dialog.alert.send_keys(“text”):Sends text to a prompt dialog (if applicable).Cleanup and TeardownProperly closing the browser session is crucial for releasing resources and ensuring that your automation script runs cleanly.Properly Closing the Browser SessionExample: Closing the Browserfromseleniumimportwebdriver# Set up the WebDriverdriver=webdriver.Chrome('./chromedriver')# Open a websitedriver.get(\"https://www.python.org/\")# Perform actions (e.g., search)search_bar=driver.find_element(By.NAME,\"q\")search_bar.send_keys(\"Python\")search_bar.send_keys(Keys.RETURN)# Cleanup: Close the browserdriver.quit()CopiedExplanation:driver.quit():Closes all browser windows and ends the WebDriver session. This is the preferred method for cleanup as it ensures the browser process is terminated and resources are freed.Alternative Methods:driver.close():Closes the current window. If it’s the only window open, it will end the session. Use driver.quit() for complete cleanup.Read More:How to Create and Use Action Class in Selenium PythonTesting Framework IntegrationIntegrating Selenium tests with a testing framework provides structured test cases, reporting, and additional functionality such as setup and teardown methods.1. Integrate with unittest Frameworkunittest is a built-in Python testing framework that provides a structured approach to writing and running tests, including test case management, fixtures, and test discovery. Integrating Selenium with unittest allows for organized test cases, setup and teardown methods, and detailed test reports, making it easier to manage and maintain automated tests.Example: Basic Test with unittestimportunittestfromseleniumimportwebdriverfromselenium.webdriver.common.byimportByfromselenium.webdriver.common.keysimportKeysclassPythonOrgSearchTest(unittest.TestCase):@classmethoddefsetUpClass(cls):cls.driver=webdriver.Chrome('./chromedriver')cls.driver.get(\"https://www.python.org/\")deftest_search_python(self):search_bar=self.driver.find_element(By.NAME,\"q\")search_bar.send_keys(\"Python\")search_bar.send_keys(Keys.RETURN)self.assertIn(\"Python\",self.driver.title)@classmethoddeftearDownClass(cls):cls.driver.quit()if__name__==\"__main__\":unittest.main()CopiedExplanation:unittest.TestCase:Defines a test case class. Each method within the class represents a test case.setUpClass():Initializes resources needed for the tests. Runs once before any test methods are executed.tearDownClass():Cleans up resources. Runs once after all test methods have completed.unittest.main():Runs the tests and provides output in the console.Read More:Top 8 Python Testing Frameworks in 20242. Integrate with pytest Frameworkpytest is a powerful and flexible Python testing framework that simplifies writing tests with its rich feature set, including fixtures, parameterized tests, and detailed assertions. Integrating Selenium with pytest enhances test organization, facilitates advanced setup/teardown functionality, and generates comprehensive test reports, improving test reliability and clarity.Example: Basic Test with pytestimport pytestfromseleniumimportwebdriverfromselenium.webdriver.common.byimportByfromselenium.webdriver.common.keysimportKeys@pytest.fixture(scope=\"module\")defdriver():driver=webdriver.Chrome('./chromedriver')yielddriver\n\n    driver.quit()deftest_search_python(driver):driver.get(\"https://www.python.org/\")search_bar=driver.find_element(By.NAME,\"q\")search_bar.send_keys(\"Python\")search_bar.send_keys(Keys.RETURN)assert\"Python\"indriver.titleCopiedExplanation:pytest.fixture():Defines a fixture that sets up and tears down resources. The scope=”module” ensures the fixture is run once per module.yield:Provides the driver instance to the test function and performs cleanup after the test completes.assert:Checks that the condition is met. pytest will report the assertion failure if theRun Selenium Python Tests on Real DevicesSelenium Python ResourcesSelenium Python Tutorial (with Example)Page Object Model and Page Factory in Selenium PythonUnderstanding ExpectedConditions in SeleniumUnderstanding Role of Thread.sleep() in SeleniumHeadless Browser Testing With Selenium PythonHow to install GeckoDriver for Selenium Python?How to perform Web Scraping using Selenium and PythonHow to Create and Use Action Class in Selenium PythonHow to download a file using Selenium and PythonHow to Press Enter without Element in Selenium Python?UI Automation using Python and Selenium: TutorialGet Current URL in Selenium using Python: TutorialBest Practices using Selenium WebDriver with PythonHere are five best practices for using Selenium WebDriver with Python:Use Explicit Waits:Prefer explicit waits over implicit waits to handle dynamic content. Explicit waits ensure that your script interacts with elements only when they are ready, reducing the chances of encountering timing issues.Organize Tests with Frameworks:Integrate Selenium tests with testing frameworks like unittest or pytest to structure your test cases, manage setup and teardown, and generate detailed test reports.Use Page Object Model (POM):Implement the Page Object Model to separate test logic from page-specific code. This design pattern promotes code reusability, maintainability, and easier updates.Handle Exceptions Carefully:Implement error handling and logging to manage unexpected situations, such as element not found or timeout errors. This helps in debugging and provides insights into test failures.Optimize Browser Performance:Run tests in headless mode or use browser profiles to speed up test execution and reduce resource consumption. Also, ensure that browser drivers are up-to-date for compatibility and performance improvements.Why run Selenium Python Tests on BrowserStack Real Device Cloud?Running Selenium Python tests on BrowserStack’s Real Device Cloud offers numerous advantages that significantly enhance testing efficiency and effectiveness.BrowserStack provides access to a wide range of real devices and browsers, ensuring that tests reflect real-world scenarios and uncover device-specific issues. The platform supports scalable parallel execution, allowing multiple tests to run simultaneously across various configurations, which accelerates the development cycle.Cross-platform testing on BrowserStack ensures consistent application performance across different environments. Additionally, it offers real-time debugging features such as live logs, screenshots, and video recordings, which aid in quick troubleshooting.Seamless integration with CI/CD pipelines further automates the testing process, enabling tests to run on every code change and providing immediate feedback on application quality. Overall, BrowserStack Automate enables comprehensive, efficient, and reliable testing, fostering continuous development and deployment.Talk to an ExpertTagsPythonSeleniumOn This PageOn This PageWhy do Developers prefer Python for writing Selenium Test Scripts?Getting Started with Selenium PythonSelenium Python Example: How to run your first Test?Interacting with Common Elements in SeleniumNavigate through HTML DOM ElementsStep 1. Locate and Interact with Navigation LinksStep 2. Access and Interact with Header SectionsStep 3. Interact with Forms and Input FieldsNavigate through Windows and FramesHandling WaitsAssertions and ValidationsHandling Alerts and Pop-upsCleanup and TeardownTesting Framework Integration1. Integrate with unittest Framework2. Integrate with pytest FrameworkSelenium Python ResourcesBest Practices using Selenium WebDriver with PythonWhy run Selenium Python Tests on BrowserStack Real Device Cloud?63,000+ViewsRelated GuidesHow to Create and Use Action Class in Selenium PythonActions class is an ability provided by Selenium for handling keyboard and mouse events. Learn how t...Learn MoreDecember 19, 20227 min readHow to Double Click on an Element in Selenium Python?Learn more about double click in Selenium Python, which assists QA who need to automate this double-...Learn MoreMarch 1, 20238 min readHow to Press Enter without Element in Selenium Python?Learn how to press enter in Selenium with the help of send_keys() function in Selenium Python in thi...Learn MoreJune 3, 20247 min readView all guidesElevate Your Testing ExpertiseJoin expert-led webinars on software testing and stay updated with the latest trends and techniques.Register Now!Test Automation on Real Devices & BrowsersTry BrowserStack Automate for Automation Testing for websites on 3500+ real Devices & Browser. Seamlessly Integrate with Frameworks to run parallel tests and get reports on custom dashboardsContact SalesHow to Create and Use Action Class in Selenium PythonActions class is an ability provided by Selenium for handling keyboard and mouse events. Learn how t...Learn MoreDecember 19, 20227 min readHow to Double Click on an Element in Selenium Python?Learn more about double click in Selenium Python, which assists QA who need to automate this double-...Learn MoreMarch 1, 20238 min readHow to Press Enter without Element in Selenium Python?Learn how to press enter in Selenium with the help of send_keys() function in Selenium Python in thi...Learn MoreJune 3, 20247 min read\n",
       "additional_data": {
         "action_params": "{'include_links': False}",
-        "duration_ms": 181.117,
+        "duration_ms": 202.678,
         "page_changed": false,
         "previous_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "previous_title": "Selenium Python Tutorial (with Example) | BrowserStack",
@@ -844,24 +840,24 @@
       }
     },
     {
-      "timestamp": "2025-03-12T15:01:28.568062",
+      "timestamp": "2025-03-12T15:27:10.881401",
       "action_type": "done",
-      "phase": "pre_action",
+      "phase": "pre-action",
       "element_info": {},
-      "text": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "text": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test"
     },
     {
-      "timestamp": "2025-03-12T15:01:28.575542",
+      "timestamp": "2025-03-12T15:27:10.890414",
       "action_type": "done",
       "phase": "post_action",
       "element_info": {},
-      "text": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "text": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "current_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
-      "result": "The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.",
+      "result": "The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.",
       "additional_data": {
-        "action_params": "{'text': 'The extracted page is a comprehensive tutorial on using Selenium with Python. It provides an introduction to Selenium as an open-source automation testing tool and explains why Python is a popular choice for writing Selenium test scripts due to its simplicity and readability. The tutorial covers topics such as setting up Selenium with Python, running your first test, interacting with web elements, handling waits, and managing multiple windows or frames. It also discusses using testing frameworks like unittest and pytest for better test management, and highlights the advantages of running Selenium tests on BrowserStack for real device testing.'}",
-        "duration_ms": 3.0469999999999997,
+        "action_params": "{'text': 'The Selenium Python Tutorial on BrowserStack is a comprehensive guide to using Selenium for web automation testing with Python. It covers why Python is widely preferred for Selenium scripts due to its simplicity and rich set of libraries. The guide provides setup instructions for Selenium WebDriver, explains how to write and run automated scripts, and discusses interacting with web elements using Python. It highlights the advantages of using Python, like ease of maintenance and extensive community support. The tutorial also delves into handling different elements, waits, alerts, and integrating Selenium with testing frameworks like unittest and pytest, making it a valuable resource for developers aiming to automate browser tasks using Python.'}",
+        "duration_ms": 3.796,
         "page_changed": false,
         "previous_url": "https://www.browserstack.com/guide/python-selenium-to-run-web-automation-test",
         "previous_title": "Selenium Python Tutorial (with Example) | BrowserStack",

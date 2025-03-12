@@ -669,7 +669,7 @@ class Controller:
 			
 			# 요소 상세 정보가 있으면 로그 파일에 추가 기록
 			if element_details:
-				with open(self.logger.element_details_log_file, 'a', encoding='utf-8') as f:
+				with open(self.logger.log_file, 'a', encoding='utf-8') as f:
 					f.write(f"=== PRE-ACTION ELEMENT DETAILS: {action_name} - {datetime.now().isoformat()} ===\n")
 					f.write(f"Element Index: {element_index}\n")
 					f.write(f"Tag: {element_details.get('tag_name', 'unknown')}\n")

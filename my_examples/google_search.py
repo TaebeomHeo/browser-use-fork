@@ -75,7 +75,7 @@ Controller.act = debug_act
 
 def print_log_summary(log_dir):
     """로그 파일의 요약 정보를 출력합니다."""
-    json_log_file = os.path.join(log_dir, "playwright_actions.json")
+    json_log_file = os.path.join(log_dir, "automation_log.json")
     
     if not os.path.exists(json_log_file):
         print(f"로그 파일을 찾을 수 없습니다: {json_log_file}")
@@ -182,7 +182,7 @@ async def main():
     # 에이전트 설정
     agent = Agent(
         task="""
-        1. Go to google.com
+        1. Go to naver.com
         2. Search for "Python browser automation"
         3. Click on the first result
         4. Extract the main content of the page

@@ -22,6 +22,8 @@ if not logger.handlers:
 
 # 기본 로그 디렉토리 설정
 DEFAULT_LOG_DIR = os.environ.get("PLAYWRIGHT_LOG_DIR", os.path.expanduser("~/playwright_logs"))
+# 결과 텍스트 최대 출력 길이 설정 (기본값: 200자)
+MAX_RESULT_LENGTH = int(os.environ.get("PLAYWRIGHT_MAX_RESULT_LENGTH", "200"))
 
 
 class PlaywrightLogger:
@@ -483,7 +485,12 @@ class PlaywrightLogger:
         if text:
             print(f"     Text: {text}")
         if result:
-            print(f"     Result: {result}")
+            # 결과가 너무 길면 잘라서 출력
+            if len(result) > MAX_RESULT_LENGTH:
+                truncated_result = result[:MAX_RESULT_LENGTH] + "... (중략됨, 전체 길이: " + str(len(result)) + "자)"
+                print(f"     Result: {truncated_result}")
+            else:
+                print(f"     Result: {result}")
         if error:
             print(f"     Error: {error}")
         
@@ -571,7 +578,12 @@ class PlaywrightLogger:
                 
                 # 결과 또는 오류 기록
                 if result:
-                    f.write(f"\nResult: {result}\n")
+                    # 결과가 너무 길면 잘라서 기록
+                    if len(result) > MAX_RESULT_LENGTH:
+                        truncated_result = result[:MAX_RESULT_LENGTH] + "... (중략됨)"
+                        f.write(f"\nResult: {truncated_result}\n")
+                    else:
+                        f.write(f"\nResult: {result}\n")
                 if error:
                     f.write(f"\nError: {error}\n")
                 
@@ -615,7 +627,12 @@ class PlaywrightLogger:
                 if current_url:
                     f.write(f"  Current URL: {current_url}\n")
                 if result:
-                    f.write(f"  Result: {result}\n")
+                    # 결과가 너무 길면 잘라서 기록
+                    if len(result) > MAX_RESULT_LENGTH:
+                        truncated_result = result[:MAX_RESULT_LENGTH] + "... (중략됨)"
+                        f.write(f"  Result: {truncated_result}\n")
+                    else:
+                        f.write(f"  Result: {result}\n")
                 if error:
                     f.write(f"  Error: {error}\n")
                 
@@ -761,7 +778,14 @@ class PlaywrightLogger:
                 
                 # 결과 및 오류 정보 추가
                 if "result" in action and action["result"]:
-                    formatted_action["result"] = action["result"]
+                    # 포맷팅된 결과에는 길이 제한 적용
+                    result = action["result"]
+                    if len(result) > MAX_RESULT_LENGTH:
+                        formatted_action["result"] = result[:MAX_RESULT_LENGTH] + "... (중략됨)"
+                        formatted_action["result_truncated"] = True
+                        formatted_action["result_full_length"] = len(result)
+                    else:
+                        formatted_action["result"] = result
                 
                 if "error" in action and action["error"]:
                     formatted_action["error"] = action["error"]

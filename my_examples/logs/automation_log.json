@@ -1,6 +1,3203 @@
 {
   "session_id": "current",
-  "timestamp": "2025-03-28T15:37:22.348760",
-  "actions": [],
-  "formatted_actions": []
+  "timestamp": "2025-05-23T11:11:54.812464",
+  "actions": [
+    {
+      "timestamp": "2025-05-23T11:09:17.551208",
+      "action_type": "go_to_url",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": null,
+      "url": "https://www.sivillage.com",
+      "current_url": "about:blank",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:09:19.051846",
+      "phase": "post_action",
+      "action_type": "go_to_url",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": null,
+      "url": "https://www.sivillage.com",
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "attributes": {},
+      "result": "🔗  Navigated to https://www.sivillage.com",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{'url': 'https://www.sivillage.com'}",
+        "duration_ms": 1460.6509999999998,
+        "page_changed": true,
+        "previous_url": "about:blank",
+        "previous_title": "",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:26.590118",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_index": 2,
+      "selector": "#hd_search",
+      "xpath": "//*[@id=\"hd_search\"]",
+      "text": "골프양말",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "element_info": {
+        "index": 2,
+        "tag_name": "input",
+        "xpath": "html/body/div/div/header/div/div/div/div/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "type": "text",
+          "class": "inp_sch evt_txt",
+          "id": "hd_search",
+          "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+          "onfocus": "javascript:overpass.header.clearAdKwdWithGetPopKwd();",
+          "autocomplete": "off",
+          "data-ad-url": "/event/initEventDetail.siv?event_no=E250512238&rccode=main_banner",
+          "data-ad-yn": "Y",
+          "onkeyup": "$(this).val($(this).val().replaceAll('#', ''))",
+          "onfocusout": "$(this).val($(this).val().replaceAll('#', ''))",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_search&wise_area3=psiv_comm_header_search_default');",
+          "data-di-id": "#hd_search"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:09:26.590184",
+        "id": "hd_search",
+        "class": "inp_sch evt_txt",
+        "type": "text",
+        "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+        "css_selector": "#hd_search",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:28.068796",
+      "phase": "post_action",
+      "action_type": "input_text",
+      "selector": "#hd_search",
+      "xpath": "//*[@id=\"hd_search\"]",
+      "element_index": 2,
+      "text": "골프양말",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "attributes": {
+        "id": "hd_search",
+        "class": "inp_sch evt_txt",
+        "type": "text",
+        "tag_name": "input",
+        "text_content": "",
+        "xpath": "html/body/div/div/header/div/div/div/div/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+        "css_selector": "#hd_search",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "⌨️  Input \"골프양말\" into index 2",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:26.590184",
+          "after": "2025-05-23T11:09:28.068876"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 2, 'text': '골프양말'}",
+        "duration_ms": 1415.68,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 2,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "hd_search",
+            "class": "inp_sch evt_txt",
+            "type": "text",
+            "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+          },
+          "position": {
+            "x": 510,
+            "y": 28.5
+          },
+          "size": {
+            "width": 362,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"hd_search\"]",
+          "css_selector": "#hd_search",
+          "parent_info": {
+            "tag_name": "div",
+            "id": "searchBox",
+            "class_name": "header__search--input",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:38.475027",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 3,
+      "selector": "button.icon-search.replace-text",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "element_info": {
+        "index": 3,
+        "tag_name": "button",
+        "xpath": "html/body/div/div/header/div/div/div/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "icon-search replace-text",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_search&wise_area3=psiv_comm_header_search_default'); javascript:overpass.header.goAdKwdOrSearchKwd();",
+          "data-di-id": "di-id-83cbff99-d2cb1cdd"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:09:38.475057",
+        "class": "icon-search replace-text",
+        "css_selector": "button.icon-search",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:41.098848",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.icon-search.replace-text",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "element_index": 3,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "attributes": {
+        "class": "icon-search replace-text",
+        "tag_name": "button",
+        "text_content": "",
+        "xpath": "html/body/div/div/header/div/div/div/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.icon-search",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 3: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:38.475057",
+          "after": "2025-05-23T11:09:41.098926"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 3}",
+        "duration_ms": 899.244,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": null,
+        "element_details": {
+          "index": 3,
+          "tag_name": "button",
+          "text_content": "검색 아이콘",
+          "inner_text": "검색 아이콘",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "icon-search replace-text"
+          },
+          "position": {
+            "x": 906,
+            "y": 28.5
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+          "css_selector": "button.icon-search.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "header__search sivillage",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "검색 아이콘",
+          "attributes": {
+            "class": "icon-search replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:48.228203",
+      "action_type": "scroll_down",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:09:48.314417",
+      "phase": "post_action",
+      "action_type": "scroll_down",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "attributes": {},
+      "result": "🔍  Scrolled down the page by 500 pixels",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{'amount': 500}",
+        "duration_ms": 51.975,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:53.982205",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 73,
+      "selector": "button.like-btn.replace-text",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "element_info": {
+        "index": 73,
+        "tag_name": "button",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[3]/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "like-btn replace-text",
+          "onclick": "overpass.disp.wish($(this),'2502918319','VV10000001');",
+          "data-category": "골프>골프 액세서리>양말/니삭스>니삭스",
+          "data-category-no": "2201046639>2303081585>2303083075>2303083100",
+          "data-normal-price": "49000",
+          "data-discount": "0",
+          "data-price": "44100",
+          "data-brand-no": "15",
+          "data-brand": "J.LINDEBERG",
+          "data-goods-no": "2502918319",
+          "data-goods-nm": "[Women] 스프링 니삭스",
+          "data-wish-goods-no": "10_2502918319",
+          "data-di-id": "di-id-d1b566de-24b9fea9"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:09:53.982270",
+        "class": "like-btn replace-text",
+        "css_selector": "button.like-btn",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:55.205012",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.like-btn.replace-text",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]",
+      "element_index": 73,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "attributes": {
+        "class": "like-btn replace-text",
+        "tag_name": "button",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[3]/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.like-btn",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 73: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:53.982270",
+          "after": "2025-05-23T11:09:55.205056"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 73}",
+        "duration_ms": 995.831,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {
+          "index": 73,
+          "tag_name": "button",
+          "text_content": "좋아요 버튼",
+          "inner_text": "좋아요 버튼",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "like-btn replace-text"
+          },
+          "position": {
+            "x": 1102,
+            "y": 434
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]",
+          "css_selector": "button.like-btn.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "product__thum gray",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "좋아요 버튼",
+          "attributes": {
+            "class": "like-btn replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:02.545995",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 37,
+      "selector": "img",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "element_info": {
+        "index": 37,
+        "tag_name": "img",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[5]/div/a/img",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+          "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+          "onerror": "this.src='https://image.sivillage.com/upload/C00001/common/noimg.jpg?RS=300&SP=1'"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:10:02.546019",
+        "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+        "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:05.283804",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "img",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+      "element_index": 37,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+        "tag_name": "img",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[5]/div/a/img",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 37: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:02.546019",
+          "after": "2025-05-23T11:10:05.283853"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 37}",
+        "duration_ms": 2125.9860000000003,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": null,
+        "element_details": {
+          "index": 37,
+          "tag_name": "img",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+            "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+          },
+          "position": {
+            "x": 292,
+            "y": 221.6640625
+          },
+          "size": {
+            "width": 266,
+            "height": 354.6640625
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+          "css_selector": "img",
+          "parent_info": {
+            "tag_name": "a",
+            "id": null,
+            "class_name": null,
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:12.540959",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_index": 42,
+      "selector": "input.form-amount__input.orderQty",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+      "text": "2",
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 42,
+        "tag_name": "input",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "type": "text",
+          "class": "form-amount__input orderQty",
+          "name": "orderQty",
+          "value": "1",
+          "data-divi": "",
+          "data-sale_poss_qty": "999",
+          "data-ord_poss_min_qty": "1",
+          "data-ord_poss_max_qty": "999",
+          "maxlength": "2",
+          "title": "수량입력",
+          "data-di-id": "di-id-b2b158c1-ca797f4a"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:10:12.540987",
+        "class": "form-amount__input orderQty",
+        "name": "orderQty",
+        "type": "text",
+        "value": "1",
+        "title": "수량입력",
+        "css_selector": "input.form-amount__input",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:13.404913",
+      "phase": "post_action",
+      "action_type": "input_text",
+      "selector": "input.form-amount__input.orderQty",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+      "element_index": 42,
+      "text": "2",
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "class": "form-amount__input orderQty",
+        "name": "orderQty",
+        "type": "text",
+        "value": "1",
+        "tag_name": "input",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "title": "수량입력",
+        "css_selector": "input.form-amount__input",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "⌨️  Input \"2\" into index 42",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:12.540987",
+          "after": "2025-05-23T11:10:13.404961"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 42, 'text': '2'}",
+        "duration_ms": 634.6990000000001,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 42,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__input orderQty",
+            "name": "orderQty",
+            "type": "text",
+            "value": "1",
+            "title": "수량입력"
+          },
+          "position": {
+            "x": 747.7734375,
+            "y": 812
+          },
+          "size": {
+            "width": 437.2265625,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+          "css_selector": "input.form-amount__input.orderQty",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "",
+          "attributes": {
+            "value": "1",
+            "class": "form-amount__input orderQty"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:23.496028",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 41,
+      "selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 41,
+        "tag_name": "button",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "form-amount__btn form-amount__btn--plus plus",
+          "data-di-id": "di-id-2b7b007e-488478d"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:10:23.496057",
+        "class": "form-amount__btn form-amount__btn--plus plus",
+        "css_selector": "button.form-amount__btn",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:24.647369",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]",
+      "element_index": 41,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "class": "form-amount__btn form-amount__btn--plus plus",
+        "tag_name": "button",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.form-amount__btn",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 41: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:23.496057",
+          "after": "2025-05-23T11:10:24.647416"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 41}",
+        "duration_ms": 908.517,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 41,
+          "tag_name": "button",
+          "text_content": "+",
+          "inner_text": "+",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__btn form-amount__btn--plus plus"
+          },
+          "position": {
+            "x": 1126,
+            "y": 812
+          },
+          "size": {
+            "width": 46,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]",
+          "css_selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "+",
+          "attributes": {
+            "class": "form-amount__btn form-amount__btn--plus plus"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:30.602451",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 0,
+      "selector": "a",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 0,
+        "tag_name": "a",
+        "xpath": "html/body/div/div/header/div/div/div/h1/a",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "href": "javascript:overpass.link('MAIN');",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_logo&wise_area3=psiv_comm_header_logo_default');",
+          "data-di-id": "di-id-d64f691e-ff5e1877"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:10:30.602482",
+        "href": "javascript:overpass.link('MAIN');",
+        "inner_text": "",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "img"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:32.149168",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "a",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]",
+      "element_index": 0,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "attributes": {
+        "href": "javascript:overpass.link('MAIN');",
+        "tag_name": "a",
+        "text_content": "",
+        "xpath": "html/body/div/div/header/div/div/div/h1/a",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "inner_text": "",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "img"
+        ]
+      },
+      "result": "🖱️  Clicked button with index 0: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:30.602482",
+          "after": "2025-05-23T11:10:32.149219"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 0}",
+        "duration_ms": 1123.767,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 0,
+          "tag_name": "a",
+          "text_content": "\n\t\t\t\t\t\t\n\t\t\t\t\t",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "href": "javascript:overpass.link('MAIN');"
+          },
+          "position": {
+            "x": 12,
+            "y": 0
+          },
+          "size": {
+            "width": 164,
+            "height": 60
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]",
+          "css_selector": "a",
+          "parent_info": {
+            "tag_name": "h1",
+            "id": null,
+            "class_name": "header__logo",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 1,
+            "tags": [
+              "img"
+            ]
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:37.604486",
+      "action_type": "scroll_to_text",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": "쇼핑백",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:10:38.370992",
+      "phase": "post_action",
+      "action_type": "scroll_to_text",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": "쇼핑백",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "attributes": {},
+      "result": "🔍  Scrolled to text: 쇼핑백",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{'text': '쇼핑백'}",
+        "duration_ms": 718.981,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:43.883420",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 8,
+      "selector": "#headerCartIcon",
+      "xpath": "//*[@id=\"headerCartIcon\"]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "element_info": {
+        "index": 8,
+        "tag_name": "a",
+        "xpath": "html/body/div/div/header/div/div/div/div[2]/nav/a[3]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "href": "javascript:overpass.link('CART');",
+          "id": "headerCartIcon",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_utility&wise_area3=psiv_comm_header_utility_shoppingbag');",
+          "class": "header__icon-item shopping-bag",
+          "data-di-id": "#headerCartIcon"
+        },
+        "text_content": "쇼핑백",
+        "timestamp": "2025-05-23T11:10:43.883445",
+        "id": "headerCartIcon",
+        "class": "header__icon-item shopping-bag",
+        "href": "javascript:overpass.link('CART');",
+        "css_selector": "#headerCartIcon",
+        "inner_text": "쇼핑백",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:45.162329",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "#headerCartIcon",
+      "xpath": "//*[@id=\"headerCartIcon\"]",
+      "element_index": 8,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "attributes": {
+        "id": "headerCartIcon",
+        "class": "header__icon-item shopping-bag",
+        "href": "javascript:overpass.link('CART');",
+        "tag_name": "a",
+        "text_content": "쇼핑백",
+        "xpath": "html/body/div/div/header/div/div/div/div[2]/nav/a[3]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "#headerCartIcon",
+        "inner_text": "쇼핑백",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 8: 쇼핑백",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:43.883445",
+          "after": "2025-05-23T11:10:45.162380"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 8}",
+        "duration_ms": 837.182,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {
+          "index": 8,
+          "tag_name": "a",
+          "text_content": "쇼핑백\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t",
+          "inner_text": "쇼핑백",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "headerCartIcon",
+            "class": "header__icon-item shopping-bag",
+            "href": "javascript:overpass.link('CART');"
+          },
+          "position": {
+            "x": 991,
+            "y": 1
+          },
+          "size": {
+            "width": 24,
+            "height": 86
+          },
+          "xpath": "//*[@id=\"headerCartIcon\"]",
+          "css_selector": "#headerCartIcon",
+          "parent_info": {
+            "tag_name": "nav",
+            "id": null,
+            "class_name": "header__icon",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:50.157173",
+      "action_type": "go_back",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:10:50.261708",
+      "phase": "post_action",
+      "action_type": "go_back",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "attributes": {},
+      "result": "🔙  Navigated back",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{}",
+        "duration_ms": 62.942,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "previous_title": "쇼핑백 - S.I.VILLAGE",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:56.723256",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_index": 2,
+      "selector": "#hd_search",
+      "xpath": "//*[@id=\"hd_search\"]",
+      "text": "골프양말",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "element_info": {
+        "index": 2,
+        "tag_name": "input",
+        "xpath": "html/body/div/div/header/div/div/div/div/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "type": "text",
+          "class": "inp_sch evt_txt",
+          "id": "hd_search",
+          "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+          "onfocus": "javascript:overpass.header.clearAdKwdWithGetPopKwd();",
+          "autocomplete": "off",
+          "data-ad-url": "/event/initEventDetail.siv?event_no=E250512238&rccode=main_banner",
+          "data-ad-yn": "Y",
+          "onkeyup": "$(this).val($(this).val().replaceAll('#', ''))",
+          "onfocusout": "$(this).val($(this).val().replaceAll('#', ''))",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_search&wise_area3=psiv_comm_header_search_default');",
+          "data-di-id": "#hd_search"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:10:56.723285",
+        "id": "hd_search",
+        "class": "inp_sch evt_txt",
+        "type": "text",
+        "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+        "css_selector": "#hd_search",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:57.810554",
+      "phase": "post_action",
+      "action_type": "input_text",
+      "selector": "#hd_search",
+      "xpath": "//*[@id=\"hd_search\"]",
+      "element_index": 2,
+      "text": "골프양말",
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "attributes": {
+        "id": "hd_search",
+        "class": "inp_sch evt_txt",
+        "type": "text",
+        "tag_name": "input",
+        "text_content": "",
+        "xpath": "html/body/div/div/header/div/div/div/div/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩",
+        "css_selector": "#hd_search",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "⌨️  Input \"골프양말\" into index 2",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:56.723285",
+          "after": "2025-05-23T11:10:57.810604"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 2, 'text': '골프양말'}",
+        "duration_ms": 1033.8480000000002,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 2,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "hd_search",
+            "class": "inp_sch evt_txt",
+            "type": "text",
+            "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+          },
+          "position": {
+            "x": 255,
+            "y": 28.5
+          },
+          "size": {
+            "width": 362,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"hd_search\"]",
+          "css_selector": "#hd_search",
+          "parent_info": {
+            "tag_name": "div",
+            "id": "searchBox",
+            "class_name": "header__search--input",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:08.210773",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 3,
+      "selector": "button.icon-search.replace-text",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "element_info": {
+        "index": 3,
+        "tag_name": "button",
+        "xpath": "html/body/div/div/header/div/div/div/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "icon-search replace-text",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_comm&wise_area1=psiv_comm_header&wise_area2=psiv_comm_header_search&wise_area3=psiv_comm_header_search_default'); javascript:overpass.header.goAdKwdOrSearchKwd();",
+          "data-di-id": "di-id-83cbff99-d2cb1cdd"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:11:08.210794",
+        "class": "icon-search replace-text",
+        "css_selector": "button.icon-search",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:10.044273",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.icon-search.replace-text",
+      "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+      "element_index": 3,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "attributes": {
+        "class": "icon-search replace-text",
+        "tag_name": "button",
+        "text_content": "",
+        "xpath": "html/body/div/div/header/div/div/div/div/button",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.icon-search",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 3: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:08.210794",
+          "after": "2025-05-23T11:11:10.044335"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 3}",
+        "duration_ms": 884.5079999999999,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": null,
+        "element_details": {
+          "index": 3,
+          "tag_name": "button",
+          "text_content": "검색 아이콘",
+          "inner_text": "검색 아이콘",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "icon-search replace-text"
+          },
+          "position": {
+            "x": 666,
+            "y": 28.5
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+          "css_selector": "button.icon-search.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "header__search sivillage",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "검색 아이콘",
+          "attributes": {
+            "class": "icon-search replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:15.206918",
+      "action_type": "scroll_down",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:11:15.301761",
+      "phase": "post_action",
+      "action_type": "scroll_down",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "attributes": {},
+      "result": "🔍  Scrolled down the page by one page",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{}",
+        "duration_ms": 56.959,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:21.147429",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 80,
+      "selector": "img",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "element_info": {
+        "index": 80,
+        "tag_name": "img",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[5]/div/a/img",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+          "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+          "onerror": "this.src='https://image.sivillage.com/upload/C00001/common/noimg.jpg?RS=300&SP=1'"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:11:21.147460",
+        "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+        "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:23.031217",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "img",
+      "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+      "element_index": 80,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+        "tag_name": "img",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/div[2]/div[2]/div/div[5]/div[2]/ul/li[5]/div/a/img",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 80: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:21.147460",
+          "after": "2025-05-23T11:11:23.031303"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 80}",
+        "duration_ms": 1431.4009999999998,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 80,
+          "tag_name": "img",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+            "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+          },
+          "position": {
+            "x": 292,
+            "y": 99.6640625
+          },
+          "size": {
+            "width": 266,
+            "height": 354.6640625
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+          "css_selector": "img",
+          "parent_info": {
+            "tag_name": "a",
+            "id": null,
+            "class_name": null,
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:29.521371",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_index": 42,
+      "selector": "input.form-amount__input.orderQty",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+      "text": "2",
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 42,
+        "tag_name": "input",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "type": "text",
+          "class": "form-amount__input orderQty",
+          "name": "orderQty",
+          "value": "1",
+          "data-divi": "",
+          "data-sale_poss_qty": "999",
+          "data-ord_poss_min_qty": "1",
+          "data-ord_poss_max_qty": "999",
+          "maxlength": "2",
+          "title": "수량입력",
+          "data-di-id": "di-id-b2b158c1-ca797f4a"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:11:29.521394",
+        "class": "form-amount__input orderQty",
+        "name": "orderQty",
+        "type": "text",
+        "value": "1",
+        "title": "수량입력",
+        "css_selector": "input.form-amount__input",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:30.408549",
+      "phase": "post_action",
+      "action_type": "input_text",
+      "selector": "input.form-amount__input.orderQty",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+      "element_index": 42,
+      "text": "2",
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "class": "form-amount__input orderQty",
+        "name": "orderQty",
+        "type": "text",
+        "value": "1",
+        "tag_name": "input",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/section/div/div[2]/table/tbody/tr[6]/td/div/input",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "title": "수량입력",
+        "css_selector": "input.form-amount__input",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "⌨️  Input \"2\" into index 42",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:29.521394",
+          "after": "2025-05-23T11:11:30.408596"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 42, 'text': '2'}",
+        "duration_ms": 637.768,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 42,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__input orderQty",
+            "name": "orderQty",
+            "type": "text",
+            "value": "1",
+            "title": "수량입력"
+          },
+          "position": {
+            "x": 747.7734375,
+            "y": 812
+          },
+          "size": {
+            "width": 437.2265625,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+          "css_selector": "input.form-amount__input.orderQty",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "",
+          "attributes": {
+            "value": "1",
+            "class": "form-amount__input orderQty"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:41.010438",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 43,
+      "selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 43,
+        "tag_name": "button",
+        "xpath": "html/body/div/div/section/section/div/div[2]/div[5]/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "btn-wide @@btn-size btn-gray2 btnCart",
+          "onclick": "n_click_logging('/AreaClick?wise_page=psiv_prddetail&wise_area1=psiv_prddetail_bottom&wise_area2=psiv_prddetail_bottom_btn&wise_area3=psiv_prddetail_bottom_btn_shoppingbag');",
+          "style": "display:block;",
+          "data-cart_divi_cd": "10",
+          "data-di-id": "di-id-a1ce778a-1ad132fa"
+        },
+        "text_content": "",
+        "timestamp": "2025-05-23T11:11:41.010465",
+        "class": "btn-wide @@btn-size btn-gray2 btnCart",
+        "css_selector": "button.btn-wide",
+        "inner_text": "",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:42.118493",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+      "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]",
+      "element_index": 43,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "attributes": {
+        "class": "btn-wide @@btn-size btn-gray2 btnCart",
+        "tag_name": "button",
+        "text_content": "",
+        "xpath": "html/body/div/div/section/section/div/div[2]/div[5]/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.btn-wide",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 43: ",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:41.010465",
+          "after": "2025-05-23T11:11:42.118546"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 43}",
+        "duration_ms": 627.19,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 43,
+          "tag_name": "button",
+          "text_content": "쇼핑백",
+          "inner_text": "쇼핑백",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "btn-wide @@btn-size btn-gray2 btnCart"
+          },
+          "position": {
+            "x": 682,
+            "y": 438.5
+          },
+          "size": {
+            "width": 272.5,
+            "height": 56
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]",
+          "css_selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "detail__btn @@type",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "쇼핑백",
+          "attributes": {
+            "class": "btn-wide @@btn-size btn-gray2 btnCart",
+            "style": "display:block;"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:48.208138",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 54,
+      "selector": "button.popup-mini__btn.black",
+      "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]",
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "element_info": {
+        "index": 54,
+        "tag_name": "button",
+        "xpath": "html/body/div[5]/div/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "class": "popup-mini__btn black",
+          "data-layer-event": "confirm",
+          "data-bo_preview_yn": "Y",
+          "data-di-id": "di-id-9a103f7c-73b56098"
+        },
+        "text_content": "쇼핑백 바로가기",
+        "timestamp": "2025-05-23T11:11:48.208166",
+        "class": "popup-mini__btn black",
+        "css_selector": "button.popup-mini__btn",
+        "inner_text": "쇼핑백 바로가기",
+        "has_parent": true
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:49.647835",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "button.popup-mini__btn.black",
+      "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]",
+      "element_index": 54,
+      "text": null,
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "attributes": {
+        "class": "popup-mini__btn black",
+        "tag_name": "button",
+        "text_content": "쇼핑백 바로가기",
+        "xpath": "html/body/div[5]/div/div/button[2]",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "css_selector": "button.popup-mini__btn",
+        "inner_text": "쇼핑백 바로가기",
+        "has_parent": true
+      },
+      "result": "🖱️  Clicked button with index 54: 쇼핑백 바로가기",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:48.208166",
+          "after": "2025-05-23T11:11:49.647886"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 54}",
+        "duration_ms": 966.798,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {
+          "index": 54,
+          "tag_name": "button",
+          "text_content": "쇼핑백 바로가기",
+          "inner_text": "쇼핑백 바로가기",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "popup-mini__btn black"
+          },
+          "position": {
+            "x": 592.5,
+            "y": 484.5
+          },
+          "size": {
+            "width": 155.5,
+            "height": 48
+          },
+          "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]",
+          "css_selector": "button.popup-mini__btn.black",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "popup-mini__btns",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:54.752195",
+      "action_type": "done",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-23T11:11:54.811789",
+      "phase": "post_action",
+      "action_type": "done",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "url": null,
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "attributes": {},
+      "result": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{'text': \"The '골프양말' product was successfully added to the cart with the correct quantity of 2.\"}",
+        "duration_ms": 28.706,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "previous_title": "쇼핑백 - S.I.VILLAGE",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    }
+  ],
+  "formatted_actions": [
+    {
+      "timestamp": "2025-05-23T11:09:17.551208",
+      "action_type": "go_to_url",
+      "phase": "pre-action",
+      "element_info": {},
+      "url": "https://www.sivillage.com",
+      "current_url": "about:blank"
+    },
+    {
+      "timestamp": "2025-05-23T11:09:19.051846",
+      "action_type": "go_to_url",
+      "phase": "post_action",
+      "element_info": {},
+      "url": "https://www.sivillage.com",
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "result": "🔗  Navigated to https://www.sivillage.com",
+      "additional_data": {
+        "action_params": "{'url': 'https://www.sivillage.com'}",
+        "duration_ms": 1460.6509999999998,
+        "page_changed": true,
+        "previous_url": "about:blank",
+        "previous_title": "",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:26.590118",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 2,
+        "selector": "#hd_search",
+        "xpath": "//*[@id=\"hd_search\"]",
+        "tag_name": "input",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "#hd_search",
+        "attributes": {
+          "id": "hd_search",
+          "class": "inp_sch evt_txt",
+          "type": "text",
+          "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "text": "골프양말",
+      "current_url": "https://www.sivillage.com/main/initMain.siv"
+    },
+    {
+      "timestamp": "2025-05-23T11:09:28.068796",
+      "action_type": "input_text",
+      "phase": "post_action",
+      "element_info": {
+        "index": 2,
+        "selector": "#hd_search",
+        "xpath": "//*[@id=\"hd_search\"]"
+      },
+      "text": "골프양말",
+      "current_url": "https://www.sivillage.com/main/initMain.siv",
+      "result": "⌨️  Input \"골프양말\" into index 2",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:26.590184",
+          "after": "2025-05-23T11:09:28.068876"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 2, 'text': '골프양말'}",
+        "duration_ms": 1415.68,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 2,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "hd_search",
+            "class": "inp_sch evt_txt",
+            "type": "text",
+            "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+          },
+          "position": {
+            "x": 510,
+            "y": 28.5
+          },
+          "size": {
+            "width": 362,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"hd_search\"]",
+          "css_selector": "#hd_search",
+          "parent_info": {
+            "tag_name": "div",
+            "id": "searchBox",
+            "class_name": "header__search--input",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:38.475027",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 3,
+        "selector": "button.icon-search.replace-text",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.icon-search",
+        "attributes": {
+          "class": "icon-search replace-text"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/main/initMain.siv"
+    },
+    {
+      "timestamp": "2025-05-23T11:09:41.098848",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 3,
+        "selector": "button.icon-search.replace-text",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]"
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "result": "🖱️  Clicked button with index 3: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:38.475057",
+          "after": "2025-05-23T11:09:41.098926"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 3}",
+        "duration_ms": 899.244,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv",
+        "new_title": null,
+        "element_details": {
+          "index": 3,
+          "tag_name": "button",
+          "text_content": "검색 아이콘",
+          "inner_text": "검색 아이콘",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "icon-search replace-text"
+          },
+          "position": {
+            "x": 906,
+            "y": 28.5
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+          "css_selector": "button.icon-search.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "header__search sivillage",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "검색 아이콘",
+          "attributes": {
+            "class": "icon-search replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:48.228203",
+      "action_type": "scroll_down",
+      "phase": "pre-action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search"
+    },
+    {
+      "timestamp": "2025-05-23T11:09:48.314417",
+      "action_type": "scroll_down",
+      "phase": "post_action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "result": "🔍  Scrolled down the page by 500 pixels",
+      "additional_data": {
+        "action_params": "{'amount': 500}",
+        "duration_ms": 51.975,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:09:53.982205",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 73,
+        "selector": "button.like-btn.replace-text",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.like-btn",
+        "attributes": {
+          "class": "like-btn replace-text"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search"
+    },
+    {
+      "timestamp": "2025-05-23T11:09:55.205012",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 73,
+        "selector": "button.like-btn.replace-text",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]"
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "result": "🖱️  Clicked button with index 73: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:09:53.982270",
+          "after": "2025-05-23T11:09:55.205056"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 73}",
+        "duration_ms": 995.831,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {
+          "index": 73,
+          "tag_name": "button",
+          "text_content": "좋아요 버튼",
+          "inner_text": "좋아요 버튼",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "like-btn replace-text"
+          },
+          "position": {
+            "x": 1102,
+            "y": 434
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[3]/div[1]/button[1]",
+          "css_selector": "button.like-btn.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "product__thum gray",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "좋아요 버튼",
+          "attributes": {
+            "class": "like-btn replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:02.545995",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 37,
+        "selector": "img",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+        "tag_name": "img",
+        "is_visible": true,
+        "is_interactive": true,
+        "attributes": {
+          "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+          "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:05.283804",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 37,
+        "selector": "img",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]"
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "🖱️  Clicked button with index 37: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:02.546019",
+          "after": "2025-05-23T11:10:05.283853"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 37}",
+        "duration_ms": 2125.9860000000003,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": null,
+        "element_details": {
+          "index": 37,
+          "tag_name": "img",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+            "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+          },
+          "position": {
+            "x": 292,
+            "y": 221.6640625
+          },
+          "size": {
+            "width": 266,
+            "height": 354.6640625
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+          "css_selector": "img",
+          "parent_info": {
+            "tag_name": "a",
+            "id": null,
+            "class_name": null,
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:12.540959",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 42,
+        "selector": "input.form-amount__input.orderQty",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+        "tag_name": "input",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "input.form-amount__input",
+        "attributes": {
+          "class": "form-amount__input orderQty",
+          "name": "orderQty",
+          "type": "text",
+          "value": "1",
+          "title": "수량입력"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "text": "2",
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:13.404913",
+      "action_type": "input_text",
+      "phase": "post_action",
+      "element_info": {
+        "index": 42,
+        "selector": "input.form-amount__input.orderQty",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]"
+      },
+      "text": "2",
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "⌨️  Input \"2\" into index 42",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:12.540987",
+          "after": "2025-05-23T11:10:13.404961"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 42, 'text': '2'}",
+        "duration_ms": 634.6990000000001,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 42,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__input orderQty",
+            "name": "orderQty",
+            "type": "text",
+            "value": "1",
+            "title": "수량입력"
+          },
+          "position": {
+            "x": 747.7734375,
+            "y": 812
+          },
+          "size": {
+            "width": 437.2265625,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+          "css_selector": "input.form-amount__input.orderQty",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "",
+          "attributes": {
+            "value": "1",
+            "class": "form-amount__input orderQty"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:23.496028",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 41,
+        "selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.form-amount__btn",
+        "attributes": {
+          "class": "form-amount__btn form-amount__btn--plus plus"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:24.647369",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 41,
+        "selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]"
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "🖱️  Clicked button with index 41: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:23.496057",
+          "after": "2025-05-23T11:10:24.647416"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 41}",
+        "duration_ms": 908.517,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 41,
+          "tag_name": "button",
+          "text_content": "+",
+          "inner_text": "+",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__btn form-amount__btn--plus plus"
+          },
+          "position": {
+            "x": 1126,
+            "y": 812
+          },
+          "size": {
+            "width": 46,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/button[2]",
+          "css_selector": "button.form-amount__btn.form-amount__btn--plus.plus",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "+",
+          "attributes": {
+            "class": "form-amount__btn form-amount__btn--plus plus"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:30.602451",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 0,
+        "selector": "a",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]",
+        "tag_name": "a",
+        "is_visible": true,
+        "is_interactive": true,
+        "attributes": {
+          "href": "javascript:overpass.link('MAIN');"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "img"
+        ]
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:32.149168",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 0,
+        "selector": "a",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]"
+      },
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "result": "🖱️  Clicked button with index 0: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:30.602482",
+          "after": "2025-05-23T11:10:32.149219"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 0}",
+        "duration_ms": 1123.767,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 0,
+          "tag_name": "a",
+          "text_content": "\n\t\t\t\t\t\t\n\t\t\t\t\t",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "href": "javascript:overpass.link('MAIN');"
+          },
+          "position": {
+            "x": 12,
+            "y": 0
+          },
+          "size": {
+            "width": 164,
+            "height": 60
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/h1[1]/a[1]",
+          "css_selector": "a",
+          "parent_info": {
+            "tag_name": "h1",
+            "id": null,
+            "class_name": "header__logo",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 1,
+            "tags": [
+              "img"
+            ]
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:37.604486",
+      "action_type": "scroll_to_text",
+      "phase": "pre-action",
+      "element_info": {},
+      "text": "쇼핑백",
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:38.370992",
+      "action_type": "scroll_to_text",
+      "phase": "post_action",
+      "element_info": {},
+      "text": "쇼핑백",
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "result": "🔍  Scrolled to text: 쇼핑백",
+      "additional_data": {
+        "action_params": "{'text': '쇼핑백'}",
+        "duration_ms": 718.981,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:43.883420",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 8,
+        "selector": "#headerCartIcon",
+        "xpath": "//*[@id=\"headerCartIcon\"]",
+        "tag_name": "a",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "#headerCartIcon",
+        "attributes": {
+          "id": "headerCartIcon",
+          "class": "header__icon-item shopping-bag",
+          "href": "javascript:overpass.link('CART');"
+        },
+        "text_content": "쇼핑백",
+        "inner_text": "쇼핑백",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:45.162329",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 8,
+        "selector": "#headerCartIcon",
+        "xpath": "//*[@id=\"headerCartIcon\"]"
+      },
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "result": "🖱️  Clicked button with index 8: 쇼핑백",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:43.883445",
+          "after": "2025-05-23T11:10:45.162380"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 8}",
+        "duration_ms": 837.182,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {
+          "index": 8,
+          "tag_name": "a",
+          "text_content": "쇼핑백\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t",
+          "inner_text": "쇼핑백",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "headerCartIcon",
+            "class": "header__icon-item shopping-bag",
+            "href": "javascript:overpass.link('CART');"
+          },
+          "position": {
+            "x": 991,
+            "y": 1
+          },
+          "size": {
+            "width": 24,
+            "height": 86
+          },
+          "xpath": "//*[@id=\"headerCartIcon\"]",
+          "css_selector": "#headerCartIcon",
+          "parent_info": {
+            "tag_name": "nav",
+            "id": null,
+            "class_name": "header__icon",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:50.157173",
+      "action_type": "go_back",
+      "phase": "pre-action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:50.261708",
+      "action_type": "go_back",
+      "phase": "post_action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "result": "🔙  Navigated back",
+      "additional_data": {
+        "action_params": "{}",
+        "duration_ms": 62.942,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "previous_title": "쇼핑백 - S.I.VILLAGE",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:10:56.723256",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 2,
+        "selector": "#hd_search",
+        "xpath": "//*[@id=\"hd_search\"]",
+        "tag_name": "input",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "#hd_search",
+        "attributes": {
+          "id": "hd_search",
+          "class": "inp_sch evt_txt",
+          "type": "text",
+          "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "text": "골프양말",
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo"
+    },
+    {
+      "timestamp": "2025-05-23T11:10:57.810554",
+      "action_type": "input_text",
+      "phase": "post_action",
+      "element_info": {
+        "index": 2,
+        "selector": "#hd_search",
+        "xpath": "//*[@id=\"hd_search\"]"
+      },
+      "text": "골프양말",
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+      "result": "⌨️  Input \"골프양말\" into index 2",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:10:56.723285",
+          "after": "2025-05-23T11:10:57.810604"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 2, 'text': '골프양말'}",
+        "duration_ms": 1033.8480000000002,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "element_details": {
+          "index": 2,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "id": "hd_search",
+            "class": "inp_sch evt_txt",
+            "type": "text",
+            "placeholder": "여름세일, ~20% 페이백+~10% 쿠폰팩"
+          },
+          "position": {
+            "x": 255,
+            "y": 28.5
+          },
+          "size": {
+            "width": 362,
+            "height": 24
+          },
+          "xpath": "//*[@id=\"hd_search\"]",
+          "css_selector": "#hd_search",
+          "parent_info": {
+            "tag_name": "div",
+            "id": "searchBox",
+            "class_name": "header__search--input",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:08.210773",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 3,
+        "selector": "button.icon-search.replace-text",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.icon-search",
+        "attributes": {
+          "class": "icon-search replace-text"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:10.044273",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 3,
+        "selector": "button.icon-search.replace-text",
+        "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]"
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "result": "🖱️  Clicked button with index 3: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:08.210794",
+          "after": "2025-05-23T11:11:10.044335"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 3}",
+        "duration_ms": 884.5079999999999,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "previous_title": "SIVILLAGE(에스아이빌리지) 공식몰",
+        "new_url": "https://www.sivillage.com/main/initMain.siv?wise_area1=G&wise_area2=G_top&wise_area3=G_logo",
+        "new_title": null,
+        "element_details": {
+          "index": 3,
+          "tag_name": "button",
+          "text_content": "검색 아이콘",
+          "inner_text": "검색 아이콘",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "icon-search replace-text"
+          },
+          "position": {
+            "x": 666,
+            "y": 28.5
+          },
+          "size": {
+            "width": 24,
+            "height": 24
+          },
+          "xpath": "/html/body/div[1]/div[1]/header[1]/div[1]/div[1]/div[1]/div[1]/button[1]",
+          "css_selector": "button.icon-search.replace-text",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "header__search sivillage",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "검색 아이콘",
+          "attributes": {
+            "class": "icon-search replace-text"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:15.206918",
+      "action_type": "scroll_down",
+      "phase": "pre-action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:15.301761",
+      "action_type": "scroll_down",
+      "phase": "post_action",
+      "element_info": {},
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+      "result": "🔍  Scrolled down the page by one page",
+      "additional_data": {
+        "action_params": "{}",
+        "duration_ms": 56.959,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "new_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:21.147429",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 80,
+        "selector": "img",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+        "tag_name": "img",
+        "is_visible": true,
+        "is_interactive": true,
+        "attributes": {
+          "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+          "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:23.031217",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 80,
+        "selector": "img",
+        "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]"
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "🖱️  Clicked button with index 80: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:21.147460",
+          "after": "2025-05-23T11:11:23.031303"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 80}",
+        "duration_ms": 1431.4009999999998,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/search/totalSearch.siv?search_kwd=%EA%B3%A8%ED%94%84%EC%96%91%EB%A7%90&spcmall_no=0000000&wise_area1=G&wise_area2=G_top&wise_area3=G_search",
+        "previous_title": "골프양말 인기상품 리스트 | SIVILLAGE(에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 80,
+          "tag_name": "img",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "src": "https://image.sivillage.com/upload/C00001/s3/goods/org/196/240419014238196.jpg?RS=300&SP=1",
+            "alt": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)"
+          },
+          "position": {
+            "x": 292,
+            "y": 99.6640625
+          },
+          "size": {
+            "width": 266,
+            "height": 354.6640625
+          },
+          "xpath": "//*[@id=\"searchGoodsUnit\"]/ul[1]/li[5]/div[1]/a[1]/img[1]",
+          "css_selector": "img",
+          "parent_info": {
+            "tag_name": "a",
+            "id": null,
+            "class_name": null,
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:29.521371",
+      "action_type": "input_text",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 42,
+        "selector": "input.form-amount__input.orderQty",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+        "tag_name": "input",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "input.form-amount__input",
+        "attributes": {
+          "class": "form-amount__input orderQty",
+          "name": "orderQty",
+          "type": "text",
+          "value": "1",
+          "title": "수량입력"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "text": "2",
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:30.408549",
+      "action_type": "input_text",
+      "phase": "post_action",
+      "element_info": {
+        "index": 42,
+        "selector": "input.form-amount__input.orderQty",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]"
+      },
+      "text": "2",
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "⌨️  Input \"2\" into index 42",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:29.521394",
+          "after": "2025-05-23T11:11:30.408596"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 42, 'text': '2'}",
+        "duration_ms": 637.768,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 42,
+          "tag_name": "input",
+          "text_content": "",
+          "inner_text": "",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "form-amount__input orderQty",
+            "name": "orderQty",
+            "type": "text",
+            "value": "1",
+            "title": "수량입력"
+          },
+          "position": {
+            "x": 747.7734375,
+            "y": 812
+          },
+          "size": {
+            "width": 437.2265625,
+            "height": 46
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/table[1]/tbody[1]/tr[6]/td[1]/div[1]/input[1]",
+          "css_selector": "input.form-amount__input.orderQty",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "form-amount",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "",
+          "attributes": {
+            "value": "1",
+            "class": "form-amount__input orderQty"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:41.010438",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 43,
+        "selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.btn-wide",
+        "attributes": {
+          "class": "btn-wide @@btn-size btn-gray2 btnCart"
+        },
+        "text_content": "",
+        "inner_text": "",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:42.118493",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 43,
+        "selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+        "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]"
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+      "result": "🖱️  Clicked button with index 43: ",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:41.010465",
+          "after": "2025-05-23T11:11:42.118546"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 43}",
+        "duration_ms": 627.19,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "new_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "element_details": {
+          "index": 43,
+          "tag_name": "button",
+          "text_content": "쇼핑백",
+          "inner_text": "쇼핑백",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "btn-wide @@btn-size btn-gray2 btnCart"
+          },
+          "position": {
+            "x": 682,
+            "y": 438.5
+          },
+          "size": {
+            "width": 272.5,
+            "height": 56
+          },
+          "xpath": "/html/body/div[1]/div[1]/section[1]/section[1]/div[1]/div[2]/div[5]/div[1]/button[2]",
+          "css_selector": "button.btn-wide.@@btn-size.btn-gray2.btnCart",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "detail__btn @@type",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {
+          "is_visible": true,
+          "is_enabled": true,
+          "text_content": "쇼핑백",
+          "attributes": {
+            "class": "btn-wide @@btn-size btn-gray2 btnCart",
+            "style": "display:block;"
+          }
+        }
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:48.208138",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_info": {
+        "index": 54,
+        "selector": "button.popup-mini__btn.black",
+        "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]",
+        "tag_name": "button",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "button.popup-mini__btn",
+        "attributes": {
+          "class": "popup-mini__btn black"
+        },
+        "text_content": "쇼핑백 바로가기",
+        "inner_text": "쇼핑백 바로가기",
+        "has_parent": true
+      },
+      "current_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:49.647835",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 54,
+        "selector": "button.popup-mini__btn.black",
+        "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]"
+      },
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "result": "🖱️  Clicked button with index 54: 쇼핑백 바로가기",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-23T11:11:48.208166",
+          "after": "2025-05-23T11:11:49.647886"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 54}",
+        "duration_ms": 966.798,
+        "page_changed": true,
+        "previous_url": "https://www.sivillage.com/goods/initDetailGoods.siv?goods_no=2404873386&sale_shop_divi_cd=13&conts_form_cd=100&rel_no=2404873386&rel_divi_cd=10",
+        "previous_title": "LAMBDA GOLF(람다골프) (공식정품) 람다 골프웨어 남성 캐시미어 삭스 MID 화이트 골프양말 스포츠양말 | S.I.VILLAGE (에스아이빌리지)",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {
+          "index": 54,
+          "tag_name": "button",
+          "text_content": "쇼핑백 바로가기",
+          "inner_text": "쇼핑백 바로가기",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "popup-mini__btn black"
+          },
+          "position": {
+            "x": 592.5,
+            "y": 484.5
+          },
+          "size": {
+            "width": 155.5,
+            "height": 48
+          },
+          "xpath": "/html/body/div[5]/div[1]/div[1]/button[2]",
+          "css_selector": "button.popup-mini__btn.black",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "popup-mini__btns",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 0,
+            "tags": []
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-23T11:11:54.752195",
+      "action_type": "done",
+      "phase": "pre-action",
+      "element_info": {},
+      "text": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10"
+    },
+    {
+      "timestamp": "2025-05-23T11:11:54.811789",
+      "action_type": "done",
+      "phase": "post_action",
+      "element_info": {},
+      "text": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "current_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+      "result": "The '골프양말' product was successfully added to the cart with the correct quantity of 2.",
+      "additional_data": {
+        "action_params": "{'text': \"The '골프양말' product was successfully added to the cart with the correct quantity of 2.\"}",
+        "duration_ms": 28.706,
+        "page_changed": false,
+        "previous_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "previous_title": "쇼핑백 - S.I.VILLAGE",
+        "new_url": "https://www.sivillage.com/cart/initCart.siv?wise_area1=G&wise_area2=G_ut&wise_area3=G_ut_shoppingbag&cart_grp_cd=10",
+        "new_title": "쇼핑백 - S.I.VILLAGE",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    }
+  ]
 }

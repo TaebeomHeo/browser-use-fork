@@ -174,7 +174,7 @@ async def main():
     
     # LLM 설정
     llm = ChatOpenAI(
-        model="gpt-4",
+        model="gpt-4o",
         temperature=0.7,
         api_key=SecretStr(os.getenv("OPENAI_API_KEY", ""))
     )
@@ -182,23 +182,28 @@ async def main():
     # 브라우저 설정
     browser_config = BrowserConfig(
         headless=False,  # 브라우저 UI 표시
-        cdp_url="http://localhost:9222"  # Chrome DevTools Protocol URL
+        disable_security=True,  # 보안 비활성화
+        extra_chromium_args=[
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+        ]
     )
     
     # 브라우저 인스턴스 생성
     browser = Browser(config=browser_config)
     
+    # 브라우저 컨텍스트와 페이지를 한 번만 생성
+    browser_context = await browser.new_context()
+    page = await browser_context.get_current_page()
+    print(f"\n현재 페이지 URL: {page.url}")
+    
     # Agent 생성
     agent = Agent(
         task="네이버 검색 자동화",
         llm=llm,
-        browser=browser
+        browser=browser,
+        browser_context=browser_context
     )
-    
-    # 현재 페이지 URL 출력
-    browser_context = await browser.new_context()
-    page = await browser_context.get_current_page()
-    print(f"\n현재 페이지 URL: {page.url}")
     
     # 사용자 입력 받기
     print("\n=== 자동화 작업 시작 ===")
@@ -212,16 +217,21 @@ async def main():
         
         if action == "1":
             search_query = input("검색어를 입력하세요: ")
-            agent.task = f"Go to naver.com and search for '{search_query}'"
+            await page.goto("https://naver.com")
+            agent.task = (
+                f"네이버 메인 페이지에서 검색창에 반드시 '{search_query}'라는 텍스트를 입력하고, "
+                "검색 버튼을 클릭해서 검색 결과 페이지로 이동하세요. "
+                "다른 검색어를 입력하지 마세요."
+            )
             await agent.run(max_steps=5)
         elif action == "2":
             result_index = input("클릭할 검색 결과의 번호를 입력하세요 (1-10): ")
-            agent.task = f"Click on the {result_index}th search result"
+            agent.task = f"검색 결과 중 {result_index}번째 결과를 클릭하세요."
             await agent.run(max_steps=3)
         elif action == "3":
             scroll_count = input("스크롤할 횟수를 입력하세요: ")
             for _ in range(int(scroll_count)):
-                agent.task = "Scroll down the page"
+                agent.task = "페이지를 아래로 스크롤하세요."
                 await agent.run(max_steps=2)
                 await asyncio.sleep(1)
         elif action == "4":

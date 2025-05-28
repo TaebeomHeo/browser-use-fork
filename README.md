@@ -13,8 +13,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/Gregor?style=social)](https://x.com/gregpr07)
 [![Twitter Follow](https://img.shields.io/twitter/follow/Magnus?style=social)](https://x.com/mamagnus00)
 
-
-🌐 Browser-use is the easiest way to connect your AI agents with the browser. 
+🌐 Browser-use is the easiest way to connect your AI agents with the browser.
 
 💡 See what others are building and share your projects in our [Discord](https://link.browser-use.com/discord) - we'd love to see what you create!
 
@@ -62,7 +61,6 @@ OPENAI_API_KEY=
 
 For other settings, models, and more, check out the [documentation 📕](https://docs.browser-use.com).
 
-
 ### Test with UI
 
 You can test [browser-use with a UI repository](https://github.com/browser-use/web-ui)
@@ -83,19 +81,19 @@ python examples/ui/gradio_demo.py
 
 ![Letter to Papa](https://github.com/user-attachments/assets/242ade3e-15bc-41c2-988f-cbc5415a66aa)
 
-<br/><br/>
+`<br/><br/>`
 
 [Prompt](https://github.com/browser-use/browser-use/blob/main/examples/use-cases/find_and_apply_to_jobs.py): Read my CV & find ML jobs, save them to a file, and then start applying for them in new tabs, if you need help, ask me.'
 
 https://github.com/user-attachments/assets/171fb4d6-0355-46f2-863e-edb04a828d04
 
-<br/><br/>
+`<br/><br/>`
 
 Prompt: Find flights on kayak.com from Zurich to Beijing from 25.12.2024 to 02.02.2025.
 
 ![flight search 8x 10fps](https://github.com/user-attachments/assets/ea605d4a-90e6-481e-a569-f0e0db7e6390)
 
-<br/><br/>
+`<br/><br/>`
 
 [Prompt](https://github.com/browser-use/browser-use/blob/main/examples/custom-functions/save_to_file_hugging_face.py): Look up models with a license of cc-by-sa-4.0 and sort by most likes on Hugging face, save top 5 to file.
 
@@ -167,4 +165,63 @@ If you use Browser Use in your research or project, please cite:
   Made with ❤️ in Zurich and San Francisco
 </div>
 
+## test_remote_browser_use.py 사용법
 
+이 스크립트는 browser-use 기반의 브라우저 자동화 테스트를 독립적으로 실행할 수 있는 예제입니다.
+
+### 주요 특징
+
+- **이 프로그램의 자체 로그**는 항상 절대 경로 `/Users/bombbie/Developer/browser-use-fork/my_examples/logs/test_remote_browser_use.log`에 남습니다.
+- **browser-use의 자동화 로그**는 환경변수 `PLAYWRIGHT_LOG_DIR`에 지정된 경로의 `automation_log.log`에 남습니다.
+- task(명령)는 환경변수 `TASK_FILE_PATH`에 지정된 파일의 내용을 읽어 사용합니다.
+
+### 환경 변수
+
+- `PLAYWRIGHT_LOG_DIR`: browser-use 로그가 저장될 디렉토리 (예: `/Users/bombbie/Developer/browser-use-fork/my_examples/logs`)
+- `TASK_FILE_PATH`: 실행할 task(명령)가 들어있는 텍스트 파일 경로
+
+### 실행 전 준비
+
+1. 필요한 패키지 설치:
+   ```sh
+   pip install python-dotenv langchain-openai requests
+   # browser-use 및 playwright 관련 패키지도 설치 필요
+   ```
+2. 로그 디렉토리 생성 (자동 생성됨)
+3. task 파일 준비 (예: `/Users/bombbie/Developer/browser-use-fork/my_examples/task.txt`)
+
+### 실행 방법
+
+```sh
+export PLAYWRIGHT_LOG_DIR=/Users/bombbie/Developer/browser-use-fork/my_examples/logs
+export TASK_FILE_PATH=/Users/bombbie/Developer/browser-use-fork/my_examples/task.txt
+python my_examples/test_remote_browser_use.py
+```
+
+### 실행 결과
+
+- 프로그램 실행 후 아래 두 로그 파일이 생성됩니다:
+  - `/Users/bombbie/Developer/browser-use-fork/my_examples/logs/test_remote_browser_use.log` : 이 프로그램의 상세 실행 로그
+  - `${PLAYWRIGHT_LOG_DIR}/automation_log.log` : browser-use의 자동화/액션 로그
+- 실행이 끝나면 로그 파일 경로와 로그 내용이 stdout에 출력됩니다.
+
+### 코드 주요 구조
+
+- **이 프로그램의 로그**: 절대 경로로 고정, 환경변수와 무관
+- **browser-use의 로그**: 환경변수로만 경로 지정, 코드에서 직접 지정하지 않음
+- **task 입력**: 환경변수 `TASK_FILE_PATH`에 지정된 파일의 텍스트를 읽어 사용
+
+### 예시 task 파일
+
+```
+https://www.naver.com 방문 후, 검색창에 '파이썬' 입력하고 검색 결과 첫 번째 링크 클릭
+```
+
+### 기타
+
+- 크롬 디버깅 포트(9222)가 열려 있어야 하며, 필요시 자동으로 크롬을 디버깅 모드로 실행합니다.
+- 실행 중 발생하는 모든 에러/상태/결과는 로그 파일에 기록됩니다.
+
+---
+
+자세한 사용법이나 커스터마이징이 필요하면 언제든 문의하세요!

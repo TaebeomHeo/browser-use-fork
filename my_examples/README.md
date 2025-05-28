@@ -1,3 +1,60 @@
+## test_remote_browser_use.py 사용법
+
+이 스크립트는 browser-use 기반의 브라우저 자동화 테스트를 독립적으로 실행할 수 있는 예제입니다.
+
+### 주요 특징
+
+- **이 프로그램의 자체 로그**는 항상 절대 경로 `/Users/bombbie/Developer/browser-use-fork/my_examples/logs/test_remote_browser_use.log`에 남습니다.
+- **browser-use의 자동화 로그**는 환경변수 `PLAYWRIGHT_LOG_DIR`에 지정된 경로의 `automation_log.log`에 남습니다.
+- task(명령)는 환경변수 `TASK_FILE_PATH`에 지정된 파일의 내용을 읽어 사용합니다.
+
+### 환경 변수
+
+- `PLAYWRIGHT_LOG_DIR`: browser-use 로그가 저장될 디렉토리 (예: `/Users/bombbie/Developer/browser-use-fork/my_examples/logs`)
+- `TASK_FILE_PATH`: 실행할 task(명령)가 들어있는 텍스트 파일 경로
+
+### 실행 전 준비
+
+1. 필요한 패키지 설치:
+   ```sh
+   pip install python-dotenv langchain-openai requests
+   # browser-use 및 playwright 관련 패키지도 설치 필요
+   ```
+2. 로그 디렉토리 생성 (자동 생성됨)
+3. task 파일 준비 (예: `/Users/bombbie/Developer/browser-use-fork/my_examples/task.txt`)
+
+### 실행 방법
+
+```sh
+export PLAYWRIGHT_LOG_DIR=/Users/bombbie/Developer/browser-use-fork/my_examples/logs
+export TASK_FILE_PATH=/Users/bombbie/Developer/browser-use-fork/my_examples/task.txt
+python my_examples/test_remote_browser_use.py
+```
+
+### 실행 결과
+
+- 프로그램 실행 후 아래 두 로그 파일이 생성됩니다:
+  - `/Users/bombbie/Developer/browser-use-fork/my_examples/logs/test_remote_browser_use.log` : 이 프로그램의 상세 실행 로그
+  - `${PLAYWRIGHT_LOG_DIR}/automation_log.log` : browser-use의 자동화/액션 로그
+- 실행이 끝나면 로그 파일 경로와 로그 내용이 stdout에 출력됩니다.
+
+### 코드 주요 구조
+
+- **이 프로그램의 로그**: 절대 경로로 고정, 환경변수와 무관
+- **browser-use의 로그**: 환경변수로만 경로 지정, 코드에서 직접 지정하지 않음
+- **task 입력**: 환경변수 `TASK_FILE_PATH`에 지정된 파일의 텍스트를 읽어 사용
+
+### 예시 task 파일
+
+```
+https://www.naver.com 방문 후, 검색창에 '파이썬' 입력하고 검색 결과 첫 번째 링크 클릭
+```
+
+### 기타
+
+- 크롬 디버깅 포트(9222)가 열려 있어야 하며, 필요시 자동으로 크롬을 디버깅 모드로 실행합니다.
+- 실행 중 발생하는 모든 에러/상태/결과는 로그 파일에 기록됩니다.
+
 # Google 검색 자동화 예제
 
 이 예제는 Browser Use 라이브러리를 사용하여 Google 검색을 자동화하고 검색 결과를 분석하는 방법을 보여줍니다.
@@ -109,8 +166,8 @@ PlaywrightLogger는 다음과 같은 위치에서 초기화되고 사용됩니�
    ```
 
 2. **Agent 클래스**: Controller를 통해 간접적으로 사용됩니다. Agent가 브라우저 액션을 실행할 때마다 Controller의 `act` 메서드가 호출되고, 이 과정에서 PlaywrightLogger가 사용됩니다.
-
 3. **예제 스크립트**: `google_search.py`와 같은 예제 스크립트에서는 로그 디렉토리를 설정하고 PlaywrightLogger의 싱글톤 인스턴스를 초기화합니다.
+
    ```python
    import browser_use.playwright_logger
    browser_use.playwright_logger._instance = None
@@ -242,8 +299,8 @@ PlaywrightLogger is initialized and used in the following locations:
    ```
 
 2. **Agent Class**: Used indirectly through the Controller. Whenever the Agent executes a browser action, the Controller's `act` method is called, which uses PlaywrightLogger.
-
 3. **Example Scripts**: In example scripts like `google_search.py`, the log directory is set and the singleton instance of PlaywrightLogger is initialized.
+
    ```python
    import browser_use.playwright_logger
    browser_use.playwright_logger._instance = None

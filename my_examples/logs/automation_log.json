@@ -1,15 +1,53 @@
 {
   "session_id": "current",
-  "timestamp": "2025-05-27T16:21:02.620317",
+  "timestamp": "2025-05-28T10:45:07.213203",
   "actions": [
     {
-      "timestamp": "2025-05-27T16:18:25.690190",
+      "timestamp": "2025-05-28T10:44:03.400582",
+      "action_type": "go_to_url",
+      "phase": "pre-action",
+      "element_index": null,
+      "selector": null,
+      "xpath": null,
+      "text": null,
+      "url": "http://naver.com",
+      "current_url": "about:blank",
+      "element_info": null
+    },
+    {
+      "timestamp": "2025-05-28T10:44:03.936731",
+      "phase": "post_action",
+      "action_type": "go_to_url",
+      "selector": null,
+      "xpath": null,
+      "element_index": null,
+      "text": null,
+      "url": "http://naver.com",
+      "current_url": "https://www.naver.com/",
+      "attributes": {},
+      "result": "🔗  Navigated to http://naver.com",
+      "error": null,
+      "changes": {},
+      "additional_data": {
+        "action_params": "{'url': 'http://naver.com'}",
+        "duration_ms": 274.13599999999997,
+        "page_changed": true,
+        "previous_url": "about:blank",
+        "previous_title": "",
+        "new_url": "https://www.naver.com/",
+        "new_title": "NAVER",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-28T10:44:12.765030",
       "action_type": "input_text",
       "phase": "pre-action",
       "element_index": 10,
       "selector": "#query",
       "xpath": "//*[@id=\"query\"]",
-      "text": "자동화 테스트",
+      "text": "김문수 영상",
       "url": null,
       "current_url": "https://www.naver.com/",
       "element_info": {
@@ -31,7 +69,7 @@
           "data-atcmp-element": ""
         },
         "text_content": "",
-        "timestamp": "2025-05-27T16:18:25.690213",
+        "timestamp": "2025-05-28T10:44:12.765054",
         "id": "query",
         "class": "search_input",
         "name": "query",
@@ -44,13 +82,13 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:25.883073",
+      "timestamp": "2025-05-28T10:44:13.029468",
       "phase": "post_action",
       "action_type": "input_text",
       "selector": "#query",
       "xpath": "//*[@id=\"query\"]",
       "element_index": 10,
-      "text": "자동화 테스트",
+      "text": "김문수 영상",
       "url": null,
       "current_url": "https://www.naver.com/",
       "attributes": {
@@ -70,17 +108,17 @@
         "inner_text": "",
         "has_parent": true
       },
-      "result": "⌨️  Input \"자동화 테스트\" into index 10",
+      "result": "⌨️  Input \"김문수 영상\" into index 10",
       "error": null,
       "changes": {
         "timestamp": {
-          "before": "2025-05-27T16:18:25.690213",
-          "after": "2025-05-27T16:18:25.883109"
+          "before": "2025-05-28T10:44:12.765054",
+          "after": "2025-05-28T10:44:13.029499"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 10, 'text': '자동화 테스트'}",
-        "duration_ms": 157.79299999999998,
+        "action_params": "{'index': 10, 'text': '김문수 영상'}",
+        "duration_ms": 225.40099999999998,
         "page_changed": false,
         "previous_url": "https://www.naver.com/",
         "previous_title": "NAVER",
@@ -133,7 +171,7 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:32.374189",
+      "timestamp": "2025-05-28T10:44:24.857675",
       "action_type": "click_element",
       "phase": "pre-action",
       "element_index": 11,
@@ -155,7 +193,7 @@
           "onclick": "window.ntm.push({event:\"nclick\",el:this,click_area:\"sch.action\"})"
         },
         "text_content": "검색",
-        "timestamp": "2025-05-27T16:18:32.374210",
+        "timestamp": "2025-05-28T10:44:24.857700",
         "class": "btn_search",
         "type": "submit",
         "css_selector": "button.btn_search",
@@ -169,7 +207,7 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:33.325865",
+      "timestamp": "2025-05-28T10:44:26.025270",
       "phase": "post_action",
       "action_type": "click_element",
       "selector": "button.btn_search",
@@ -177,7 +215,7 @@
       "element_index": 11,
       "text": null,
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
       "attributes": {
         "class": "btn_search",
         "type": "submit",
@@ -200,18 +238,18 @@
       "error": null,
       "changes": {
         "timestamp": {
-          "before": "2025-05-27T16:18:32.374210",
-          "after": "2025-05-27T16:18:33.325883"
+          "before": "2025-05-28T10:44:24.857700",
+          "after": "2025-05-28T10:44:26.025292"
         }
       },
       "additional_data": {
         "action_params": "{'index': 11}",
-        "duration_ms": 949.718,
+        "duration_ms": 1164.817,
         "page_changed": true,
         "previous_url": "https://www.naver.com/",
         "previous_title": "NAVER",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
+        "new_title": "김문수 영상 : 네이버 검색",
         "element_details": {
           "index": 11,
           "tag_name": "button",
@@ -251,191 +289,235 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:39.849792",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:31.685815",
+      "action_type": "click_element",
+      "phase": "pre-action",
+      "element_index": 17,
+      "selector": "a.tab",
+      "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]",
+      "text": null,
+      "url": null,
+      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
+      "element_info": {
+        "index": 17,
+        "tag_name": "a",
+        "xpath": "html/body/div[3]/div/div/div[2]/div/div/div/div/div/div[8]/a",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "attributes": {
+          "role": "tab",
+          "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+          "onclick": "return goOtherCR(this,'a=tab*n.jmp&r=8&i=&u='+urlencode(this.href));",
+          "class": "tab",
+          "aria-selected": "false"
+        },
+        "text_content": "뉴스",
+        "timestamp": "2025-05-28T10:44:31.685832",
+        "class": "tab",
+        "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "role": "tab",
+        "css_selector": "a.tab",
+        "inner_text": "뉴스",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "i"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-05-28T10:44:32.263430",
+      "phase": "post_action",
+      "action_type": "click_element",
+      "selector": "a.tab",
+      "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]",
+      "element_index": 17,
+      "text": null,
+      "url": null,
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+      "attributes": {
+        "class": "tab",
+        "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "tag_name": "a",
+        "text_content": "뉴스",
+        "xpath": "html/body/div[3]/div/div/div[2]/div/div/div/div/div/div[8]/a",
+        "is_visible": true,
+        "is_interactive": true,
+        "is_top_element": true,
+        "role": "tab",
+        "css_selector": "a.tab",
+        "inner_text": "뉴스",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "i"
+        ]
+      },
+      "result": "🖱️  Clicked button with index 17: 뉴스",
+      "error": null,
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-28T10:44:31.685832",
+          "after": "2025-05-28T10:44:32.263452"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 17}",
+        "duration_ms": 575.277,
+        "page_changed": true,
+        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
+        "previous_title": "김문수 영상 : 네이버 검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
+        "element_details": {
+          "index": 17,
+          "tag_name": "a",
+          "text_content": "뉴스",
+          "inner_text": "뉴스",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "tab",
+            "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+            "role": "tab"
+          },
+          "position": {
+            "x": 520.1328125,
+            "y": 77
+          },
+          "size": {
+            "width": 49.3515625,
+            "height": 36
+          },
+          "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]",
+          "css_selector": "a.tab",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "flick_bx",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 1,
+            "tags": [
+              "i"
+            ]
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-28T10:44:39.200200",
+      "action_type": "extract_content",
       "phase": "pre-action",
       "element_index": null,
       "selector": null,
       "xpath": null,
-      "text": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
+      "text": null,
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "element_info": null
     },
     {
-      "timestamp": "2025-05-27T16:18:39.858069",
+      "timestamp": "2025-05-28T10:44:39.516489",
       "phase": "post_action",
-      "action_type": "done",
+      "action_type": "extract_content",
       "selector": null,
       "xpath": null,
       "element_index": null,
-      "text": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
+      "text": null,
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "attributes": {},
-      "result": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
+      "result": "📄  Extracted page as text\n: ON/OFF 설정은 해당기기(브라우저)에 저장됩니다.동일한 시간대・연령대・남녀별 사용자 그룹의 관심사에 맞춰 자동완성을 제공합니다. 자세히 보기_님로그아웃네이버 멤버쉽알림을 모두 삭제하시겠습니까?옵션을 유지할 경우 선택한 서비스 영역과 언론사로 필터링된 뉴스 결과가 계속 제공됩니다.잠시 후 다시 시도해주십시오.네이버 검색은 최상의 검색 결과 품질을 위해 뉴스 검색결과를 2,000건까지 제공합니다.원하시는 검색 결과를 찾으시려면 더 구체적인 검색어를 입력해 보세요.장소 클립 찍고, 포인트 최대 2만원 적립할인에 적립까지, 지금 다운로드네이버 멤버십 월 4,9OO원 시작국내 여행지 추천정보를 가져오는 중입니다.\n",
       "error": null,
       "changes": {},
       "additional_data": {
-        "action_params": "{'text': \"Successfully automated a search on Naver for '자동화 테스트' and displayed the results.\"}",
-        "duration_ms": 3.791,
+        "action_params": "{'include_links': False}",
+        "duration_ms": 312.53,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
     },
     {
-      "timestamp": "2025-05-27T16:19:31.449710",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:45.655899",
+      "action_type": "extract_content",
       "phase": "pre-action",
       "element_index": null,
       "selector": null,
       "xpath": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "text": null,
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "element_info": null
     },
     {
-      "timestamp": "2025-05-27T16:19:31.458021",
+      "timestamp": "2025-05-28T10:44:45.862904",
       "phase": "post_action",
-      "action_type": "done",
+      "action_type": "extract_content",
       "selector": null,
       "xpath": null,
       "element_index": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "text": null,
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "attributes": {},
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "result": "📄  Extracted page as text\n: ON/OFF 설정은 해당기기(브라우저)에 저장됩니다.동일한 시간대・연령대・남녀별 사용자 그룹의 관심사에 맞춰 자동완성을 제공합니다. 자세히 보기_님로그아웃네이버 멤버쉽알림을 모두 삭제하시겠습니까?옵션을 유지할 경우 선택한 서비스 영역과 언론사로 필터링된 뉴스 결과가 계속 제공됩니다.잠시 후 다시 시도해주십시오.네이버 검색은 최상의 검색 결과 품질을 위해 뉴스 검색결과를 2,000건까지 제공합니다.원하시는 검색 결과를 찾으시려면 더 구체적인 검색어를 입력해 보세요.장소 클립 찍고, 포인트 최대 2만원 적립할인에 적립까지, 지금 다운로드네이버 멤버십 월 4,9OO원 시작국내 여행지 추천정보를 가져오는 중입니다.\n",
       "error": null,
       "changes": {},
       "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.052,
+        "action_params": "{'include_links': False}",
+        "duration_ms": 202.82,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
     },
     {
-      "timestamp": "2025-05-27T16:20:45.520441",
+      "timestamp": "2025-05-28T10:45:07.208343",
       "action_type": "done",
       "phase": "pre-action",
       "element_index": null,
       "selector": null,
       "xpath": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "text": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\n- '\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...'\n- '사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]'.",
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "element_info": null
     },
     {
-      "timestamp": "2025-05-27T16:20:45.528965",
+      "timestamp": "2025-05-28T10:45:07.212926",
       "phase": "post_action",
       "action_type": "done",
       "selector": null,
       "xpath": null,
       "element_index": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "text": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\n- '\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...'\n- '사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]'.",
       "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
       "attributes": {},
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "result": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\n- '\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...'\n- '사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]'.",
       "error": null,
       "changes": {},
       "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 2.79,
+        "action_params": "{'text': '- \\'홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은\\'\\n- \\'이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.\\'\\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\\n- \\'\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...\\'\\n- \\'사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]\\'.'}",
+        "duration_ms": 1.617,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
-        "element_details": {},
-        "post_action_element_details": {}
-      }
-    },
-    {
-      "timestamp": "2025-05-27T16:20:54.323436",
-      "action_type": "done",
-      "phase": "pre-action",
-      "element_index": null,
-      "selector": null,
-      "xpath": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "element_info": null
-    },
-    {
-      "timestamp": "2025-05-27T16:20:54.331009",
-      "phase": "post_action",
-      "action_type": "done",
-      "selector": null,
-      "xpath": null,
-      "element_index": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "attributes": {},
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "error": null,
-      "changes": {},
-      "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.1380000000000003,
-        "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
-        "element_details": {},
-        "post_action_element_details": {}
-      }
-    },
-    {
-      "timestamp": "2025-05-27T16:21:02.609442",
-      "action_type": "done",
-      "phase": "pre-action",
-      "element_index": null,
-      "selector": null,
-      "xpath": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "element_info": null
-    },
-    {
-      "timestamp": "2025-05-27T16:21:02.619994",
-      "phase": "post_action",
-      "action_type": "done",
-      "selector": null,
-      "xpath": null,
-      "element_index": null,
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "url": null,
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "attributes": {},
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "error": null,
-      "changes": {},
-      "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.745,
-        "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
@@ -443,7 +525,35 @@
   ],
   "formatted_actions": [
     {
-      "timestamp": "2025-05-27T16:18:25.690190",
+      "timestamp": "2025-05-28T10:44:03.400582",
+      "action_type": "go_to_url",
+      "phase": "pre-action",
+      "element_info": {},
+      "url": "http://naver.com",
+      "current_url": "about:blank"
+    },
+    {
+      "timestamp": "2025-05-28T10:44:03.936731",
+      "action_type": "go_to_url",
+      "phase": "post_action",
+      "element_info": {},
+      "url": "http://naver.com",
+      "current_url": "https://www.naver.com/",
+      "result": "🔗  Navigated to http://naver.com",
+      "additional_data": {
+        "action_params": "{'url': 'http://naver.com'}",
+        "duration_ms": 274.13599999999997,
+        "page_changed": true,
+        "previous_url": "about:blank",
+        "previous_title": "",
+        "new_url": "https://www.naver.com/",
+        "new_title": "NAVER",
+        "element_details": {},
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-28T10:44:12.765030",
       "action_type": "input_text",
       "phase": "pre-action",
       "element_info": {
@@ -466,11 +576,11 @@
         "inner_text": "",
         "has_parent": true
       },
-      "text": "자동화 테스트",
+      "text": "김문수 영상",
       "current_url": "https://www.naver.com/"
     },
     {
-      "timestamp": "2025-05-27T16:18:25.883073",
+      "timestamp": "2025-05-28T10:44:13.029468",
       "action_type": "input_text",
       "phase": "post_action",
       "element_info": {
@@ -478,18 +588,18 @@
         "selector": "#query",
         "xpath": "//*[@id=\"query\"]"
       },
-      "text": "자동화 테스트",
+      "text": "김문수 영상",
       "current_url": "https://www.naver.com/",
-      "result": "⌨️  Input \"자동화 테스트\" into index 10",
+      "result": "⌨️  Input \"김문수 영상\" into index 10",
       "changes": {
         "timestamp": {
-          "before": "2025-05-27T16:18:25.690213",
-          "after": "2025-05-27T16:18:25.883109"
+          "before": "2025-05-28T10:44:12.765054",
+          "after": "2025-05-28T10:44:13.029499"
         }
       },
       "additional_data": {
-        "action_params": "{'index': 10, 'text': '자동화 테스트'}",
-        "duration_ms": 157.79299999999998,
+        "action_params": "{'index': 10, 'text': '김문수 영상'}",
+        "duration_ms": 225.40099999999998,
         "page_changed": false,
         "previous_url": "https://www.naver.com/",
         "previous_title": "NAVER",
@@ -542,7 +652,7 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:32.374189",
+      "timestamp": "2025-05-28T10:44:24.857675",
       "action_type": "click_element",
       "phase": "pre-action",
       "element_info": {
@@ -569,7 +679,7 @@
       "current_url": "https://www.naver.com/"
     },
     {
-      "timestamp": "2025-05-27T16:18:33.325865",
+      "timestamp": "2025-05-28T10:44:26.025270",
       "action_type": "click_element",
       "phase": "post_action",
       "element_info": {
@@ -577,22 +687,22 @@
         "selector": "button.btn_search",
         "xpath": "//*[@id=\"sform\"]/fieldset[1]/button[1]"
       },
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
+      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
       "result": "🖱️  Clicked button with index 11: 검색",
       "changes": {
         "timestamp": {
-          "before": "2025-05-27T16:18:32.374210",
-          "after": "2025-05-27T16:18:33.325883"
+          "before": "2025-05-28T10:44:24.857700",
+          "after": "2025-05-28T10:44:26.025292"
         }
       },
       "additional_data": {
         "action_params": "{'index': 11}",
-        "duration_ms": 949.718,
+        "duration_ms": 1164.817,
         "page_changed": true,
         "previous_url": "https://www.naver.com/",
         "previous_title": "NAVER",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
+        "new_title": "김문수 영상 : 네이버 검색",
         "element_details": {
           "index": 11,
           "tag_name": "button",
@@ -632,141 +742,177 @@
       }
     },
     {
-      "timestamp": "2025-05-27T16:18:39.849792",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:31.685815",
+      "action_type": "click_element",
       "phase": "pre-action",
-      "element_info": {},
-      "text": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70"
+      "element_info": {
+        "index": 17,
+        "selector": "a.tab",
+        "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]",
+        "tag_name": "a",
+        "is_visible": true,
+        "is_interactive": true,
+        "css_selector": "a.tab",
+        "attributes": {
+          "class": "tab",
+          "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+          "role": "tab"
+        },
+        "text_content": "뉴스",
+        "inner_text": "뉴스",
+        "has_parent": true,
+        "children_count": 1,
+        "children_tags": [
+          "i"
+        ]
+      },
+      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068"
     },
     {
-      "timestamp": "2025-05-27T16:18:39.858069",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:32.263430",
+      "action_type": "click_element",
+      "phase": "post_action",
+      "element_info": {
+        "index": 17,
+        "selector": "a.tab",
+        "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]"
+      },
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+      "result": "🖱️  Clicked button with index 17: 뉴스",
+      "changes": {
+        "timestamp": {
+          "before": "2025-05-28T10:44:31.685832",
+          "after": "2025-05-28T10:44:32.263452"
+        }
+      },
+      "additional_data": {
+        "action_params": "{'index': 17}",
+        "duration_ms": 575.277,
+        "page_changed": true,
+        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81&ackey=dl71y068",
+        "previous_title": "김문수 영상 : 네이버 검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
+        "element_details": {
+          "index": 17,
+          "tag_name": "a",
+          "text_content": "뉴스",
+          "inner_text": "뉴스",
+          "is_visible": true,
+          "is_enabled": true,
+          "attributes": {
+            "class": "tab",
+            "href": "?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+            "role": "tab"
+          },
+          "position": {
+            "x": 520.1328125,
+            "y": 77
+          },
+          "size": {
+            "width": 49.3515625,
+            "height": 36
+          },
+          "xpath": "//*[@id=\"lnb\"]/div[1]/div[1]/div[1]/div[1]/div[1]/div[8]/a[1]",
+          "css_selector": "a.tab",
+          "parent_info": {
+            "tag_name": "div",
+            "id": null,
+            "class_name": "flick_bx",
+            "has_parent": true
+          },
+          "children_info": {
+            "count": 1,
+            "tags": [
+              "i"
+            ]
+          }
+        },
+        "post_action_element_details": {}
+      }
+    },
+    {
+      "timestamp": "2025-05-28T10:44:39.200200",
+      "action_type": "extract_content",
+      "phase": "pre-action",
+      "element_info": {},
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81"
+    },
+    {
+      "timestamp": "2025-05-28T10:44:39.516489",
+      "action_type": "extract_content",
       "phase": "post_action",
       "element_info": {},
-      "text": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "result": "Successfully automated a search on Naver for '자동화 테스트' and displayed the results.",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+      "result": "📄  Extracted page as text\n: ON/OFF 설정은 해당기기(브라우저)에 저장됩니다.동일한 시간대・연령대・남녀별 사용자 그룹의 관심사에 맞춰 자동완성을 제공합니다. 자세히 보기_님로그아웃네이버 멤버쉽알림을 모두 삭제하시겠습니까?옵션을 유지할 경우 선택한 서비스 영역과 언론사로 필터링된 뉴스 결과가 계속 제공됩니다.잠시 후 다시 시도해주십시... (중략됨)",
+      "result_truncated": true,
+      "result_full_length": 372,
       "additional_data": {
-        "action_params": "{'text': \"Successfully automated a search on Naver for '자동화 테스트' and displayed the results.\"}",
-        "duration_ms": 3.791,
+        "action_params": "{'include_links': False}",
+        "duration_ms": 312.53,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
     },
     {
-      "timestamp": "2025-05-27T16:19:31.449710",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:45.655899",
+      "action_type": "extract_content",
       "phase": "pre-action",
       "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70"
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81"
     },
     {
-      "timestamp": "2025-05-27T16:19:31.458021",
-      "action_type": "done",
+      "timestamp": "2025-05-28T10:44:45.862904",
+      "action_type": "extract_content",
       "phase": "post_action",
       "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+      "result": "📄  Extracted page as text\n: ON/OFF 설정은 해당기기(브라우저)에 저장됩니다.동일한 시간대・연령대・남녀별 사용자 그룹의 관심사에 맞춰 자동완성을 제공합니다. 자세히 보기_님로그아웃네이버 멤버쉽알림을 모두 삭제하시겠습니까?옵션을 유지할 경우 선택한 서비스 영역과 언론사로 필터링된 뉴스 결과가 계속 제공됩니다.잠시 후 다시 시도해주십시... (중략됨)",
+      "result_truncated": true,
+      "result_full_length": 372,
       "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.052,
+        "action_params": "{'include_links': False}",
+        "duration_ms": 202.82,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
     },
     {
-      "timestamp": "2025-05-27T16:20:45.520441",
+      "timestamp": "2025-05-28T10:45:07.208343",
       "action_type": "done",
       "phase": "pre-action",
       "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70"
+      "text": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\n- '\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...'\n- '사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]'.",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81"
     },
     {
-      "timestamp": "2025-05-27T16:20:45.528965",
+      "timestamp": "2025-05-28T10:45:07.212926",
       "action_type": "done",
       "phase": "post_action",
       "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
+      "text": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\n- '\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...'\n- '사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]'.",
+      "current_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+      "result": "- '홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은'\n- '이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.'\n-... (중략됨)",
+      "result_truncated": true,
+      "result_full_length": 316,
       "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 2.79,
+        "action_params": "{'text': '- \\'홍진경 \"마지막 키스 언제?\"…이재명·김문수·이준석 대답은\\'\\n- \\'이에 따라 김문수 후보의 영상은 28일 오전 8시, 이준석 후보는 오후 1시, 이재명 후보는 오후 6시에 공개될 예정이다. 약 1분 20초 길이의 예고편 영상이지만, TV 프로그램이 아닌 유튜브 채널에 세 후보가 모두 출연했다는 점에서 본편이 공개되기 이전부터 많은 관심을 받았다.\\'\\n- \"김문수, 내란 그 자체\"...\"계엄과 내란은 달라\"\\n- \\'\"출국금지\" 한덕수 \"김문수 위해 사전투표\"···지원유세엔 안 나...\\'\\n- \\'사전투표 한다는 김문수, ‘사전투표 NO’라는 지지자들[현장에서]\\'.'}",
+        "duration_ms": 1.617,
         "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
-        "element_details": {},
-        "post_action_element_details": {}
-      }
-    },
-    {
-      "timestamp": "2025-05-27T16:20:54.323436",
-      "action_type": "done",
-      "phase": "pre-action",
-      "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70"
-    },
-    {
-      "timestamp": "2025-05-27T16:20:54.331009",
-      "action_type": "done",
-      "phase": "post_action",
-      "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.1380000000000003,
-        "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
-        "element_details": {},
-        "post_action_element_details": {}
-      }
-    },
-    {
-      "timestamp": "2025-05-27T16:21:02.609442",
-      "action_type": "done",
-      "phase": "pre-action",
-      "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70"
-    },
-    {
-      "timestamp": "2025-05-27T16:21:02.619994",
-      "action_type": "done",
-      "phase": "post_action",
-      "element_info": {},
-      "text": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "current_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-      "result": "Successfully completed the Naver search automation task for '자동화 테스트'.",
-      "additional_data": {
-        "action_params": "{'text': \"Successfully completed the Naver search automation task for '자동화 테스트'.\"}",
-        "duration_ms": 3.745,
-        "page_changed": false,
-        "previous_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "previous_title": "자동화 테스트 : 네이버 검색",
-        "new_url": "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%9E%90%EB%8F%99%ED%99%94+%ED%85%8C%EC%8A%A4%ED%8A%B8&ackey=w58o2h70",
-        "new_title": "자동화 테스트 : 네이버 검색",
+        "previous_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "previous_title": "김문수 영상 : 네이버 뉴스검색",
+        "new_url": "https://search.naver.com/search.naver?ssc=tab.news.all&where=news&sm=tab_jum&query=%EA%B9%80%EB%AC%B8%EC%88%98+%EC%98%81%EC%83%81",
+        "new_title": "김문수 영상 : 네이버 뉴스검색",
         "element_details": {},
         "post_action_element_details": {}
       }
